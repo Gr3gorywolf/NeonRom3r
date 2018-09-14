@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="250dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/portada2"
+            android:scaleType="fitXY"
+            android:background="@drawable/logo"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:src="@drawable/gamepadvariant"
+            android:textColor="#08a374"
+            android:id="@+id/consola"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="Esta aplicación fue desarrollada por Gregory Alexander Cabral De Los Santos con Xamarin.android con la intención de aprender mas acerca de la librería de compactibilidad y webscrapping. por ende esta aplicación nunca tendrá publicidad y  es sin fin lucro pero lo único que se pide es que  por favor deje su sugerencia u opiniones en la sección de feedback                                                                                                                                                                                 © 2018 GR3    Github:Gr3gorywolf"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp" />
+    </LinearLayout>
+</ScrollView>
