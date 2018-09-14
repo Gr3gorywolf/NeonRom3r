@@ -7,10 +7,10 @@
 <br>
 <br>
 <br><b>Multiple console sections:</b><br>This app have arround 8 console roms sections that have each arround 1000 roms
-<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src='https://gr3gorywolf.github.io/NeonRom3r/sidemenu.jpeg' style='margin-left:25%'/>
-<br><b>Fast rom searching:</b><br>The roms that are on the list can be filtered by the criteria that you enter in the searchbar and the results 
+<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src='https://gr3gorywolf.github.io/NeonRom3r/sidemenu.jpeg' style='margin-left:25%'/><br>
+<br><b>Fast rom searching:</b><br>The roms that are on the list can be filtered by the criteria that you enter in the searchbar and the results are dinamically refreshed on the list<br>
 <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src='https://gr3gorywolf.github.io/NeonRom3r/fastsearching.jpeg' style='margin-left:25%'/>
-are dinamically refreshed on the list
+
 
 
 
