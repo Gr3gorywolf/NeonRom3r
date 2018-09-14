@@ -3,6 +3,10 @@
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src='https://gr3gorywolf.github.io/NeonRom3r/logolarge.png' style='margin-left:25%'/>
 <br>This is a android app to download roms directly without enter to another webpage based on information scrapped from <a href='https://emulator.games/roms/'>here</a> 
 <br>this app have the following features:
+<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src='https://gr3gorywolf.github.io/NeonRom3r/sidemenu.jpeg' style='margin-left:25%'/>
+<br>Multiple console sections:<br>This app have arround 8 console roms sections that have each arround 1000 roms
+<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src='https://gr3gorywolf.github.io/NeonRom3r/fastsearching.jpeg' style='margin-left:25%'/>
+<br>Fast rom searching:<br>The roms that are on the list can be filtered by the criteria that you enter in the searchbar and the results are dinamically refreshed on the list
 
 
 
