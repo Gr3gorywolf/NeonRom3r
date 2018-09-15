@@ -29,7 +29,8 @@
 <br>
 <br>
 <br>
-<br>You can download the precompiled and signed apk directly from this <a href='https://gr3gorywolf.github.io/NeonRom3r/GR3apps.neonrom3r.apk'>Link</a>
+<br>You can download the 
+signed apk directly from this <a href='https://gr3gorywolf.github.io/NeonRom3r/GR3apps.neonrom3r.apk'>Link</a>
 <br>
 <br>
 <br>
