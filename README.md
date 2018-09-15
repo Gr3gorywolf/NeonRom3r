@@ -6,7 +6,7 @@
 <br>
 <br>
 <br>
-<br><b>Multiple console sections:</b><br>This app have arround 8 console roms sections that have each arround 1000 roms and the roms info are downloaded from <a href='https://github.com/Gr3gorywolf/getromdownload'>Here</a> that contains a formatted text files that contains the scrapped information from emulator.games superrscrapper 
+<br><b>Multiple console sections:</b><br>This app have arround 8 console roms sections that have each arround 1000 roms and the roms info are downloaded from <a href='https://github.com/Gr3gorywolf/getromdownload'>Here</a> that contains a formatted text files that contains the scrapped information from emulator.games using the core of <a href='https://github.com/Gr3gorywolf/EmulatorGamesSuperscrapper'>EmulatorGamesSuperscrapper</a> 
 <br>
 <br>
 <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src='https://gr3gorywolf.github.io/NeonRom3r/sidemenu.jpeg' style='margin-left:25%'/><br>
@@ -14,7 +14,7 @@
 <br>
 <br>
 <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src='https://gr3gorywolf.github.io/NeonRom3r/fastsearching.jpeg' style='margin-left:25%'/>
-<br><b>Rom info extractor:</b><br>This use the webscrapper to extract important information from the emulator.games webpage such as hd portrait,download link,rating etc
+<br><b>Rom info extractor:</b><br>This use the webscrapper core to extract important information from the emulator.games webpage such as hd portrait,download link,rating etc
 <br>
 <br>
 <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src='https://gr3gorywolf.github.io/NeonRom3r/infomenu.jpeg' style='margin-left:25%'/>
@@ -22,7 +22,7 @@
 <br>
 <br>
 <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src='https://gr3gorywolf.github.io/NeonRom3r/sharedimg.jpeg' style='margin-left:25%'/>
-<br><b>Direct download :</b><br>once the rom information is stracted you are able to download it directly from the app without enter to third party apps or webbrowser<br>
+<br><b>Direct download :</b><br>once the rom information is extracted you can to download it directly from the app without enter to third party apps or webbrowser<br>
 <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src='https://gr3gorywolf.github.io/NeonRom3r/direcdownloading.jpeg' style='margin-left:25%'/>
 <br>
 <br>
