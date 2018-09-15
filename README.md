@@ -18,7 +18,7 @@
 <br>
 <br>
 <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src='https://gr3gorywolf.github.io/NeonRom3r/infomenu.jpeg' style='margin-left:25%'/>
-<br><b>Rom share button:</b><br>You can share the extracted rom information through your apps that accept image intent ex instagram, whatsapp,telegram etc
+<br><b>Rom share button:</b><br>You can share the extracted rom information through  apps that accept image intent ex instagram, whatsapp,telegram etc
 <br>
 <br>
 <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src='https://gr3gorywolf.github.io/NeonRom3r/sharedimg.jpeg' style='margin-left:25%'/>
