@@ -1,0 +1,1 @@
+<menu xmlns:app="//schemas.android.com/apk/res-auto" xmlns:android="//schemas.android.com/apk/res/android"><item android:id="@+id/descargartool" android:icon="@drawable/download24" app:showAsAction="ifRoom" android:title="Descargar" /><item android:id="@+id/compartir" android:icon="@drawable/sharevariant" app:showAsAction="ifRoom" android:title="Compartir" /></menu>

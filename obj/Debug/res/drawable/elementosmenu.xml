@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"><group android:checkableBehavior="single"><item android:id="@+id/gameboy" android:icon="@drawable/gameboy" android:title="Gameboy"></item><item android:id="@+id/gameboyc" android:icon="@drawable/game" android:title="Gameboy Color"></item><item android:id="@+id/gba" android:icon="@drawable/gba" android:title="Gameboy Advance"></item><item android:id="@+id/nintendo" android:icon="@drawable/nintendogamesconsole" android:title="Nintendo"></item><item android:id="@+id/supernintendo" android:icon="@drawable/supernintendo" android:title="Super nintendo"></item><item android:id="@+id/n64" android:icon="@drawable/nintendo64console" android:title="Nintendo 64"></item><item android:id="@+id/playstation" android:icon="@drawable/playstation" android:title="Playstation"></item><item android:id="@+id/sega" android:icon="@drawable/segamegadrive" android:title="Sega megadrive"></item><item android:id="@+id/feedback" android:icon="@drawable/messagealert" android:title="Deja un feedback"></item><item android:id="@+id/about" android:icon="@drawable/information" android:title="Acerca de"></item></group></menu><!-- Code to implement into Activity:
+
+Android.Widget.SearchView searchView;
+public override bool OnCreateOptionsMenu(IMenu menu)
+{
+  this.MenuInflater.Inflate(Resource.Menu.elementosmenu, menu);
+
+  var searchItem = menu.FindItem(Resource.Id.action_search);
+
+  searchView = searchItem.ActionProvider.JavaCast<Android.Widget.SearchView>();
+
+  searchView.QueryTextSubmit += (sender, args) =>
+  {
+    Toast.MakeText(this, "You searched: " + args.Query, ToastLength.Short).Show();
+
+  };
+
+
+  return base.OnCreateOptionsMenu(menu);
+}
+
+-->
