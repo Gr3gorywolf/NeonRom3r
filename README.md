@@ -1,12 +1,12 @@
 # NeonRom3r
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src='https://gr3gorywolf.github.io/NeonRom3r/logolarge.png' style='margin-left:25%'/>
-<br>This is a android app to download roms directly without enter to another webpage based on information scrapped from <a href='https://emulator.games/roms/'>here</a> 
+<br>This is a android app to download roms directly without enter to another webpage based on information scraped from <a href='https://emulator.games/roms/'>here</a> 
 <br>this app have the following features:
 <br>
 <br>
 <br>
-<br><b>Multiple console sections:</b><br>This app have arround 8 console roms sections that have each arround 1000 roms and the roms info are downloaded from <a href='https://github.com/Gr3gorywolf/getromdownload'>Here</a> that contains a formatted text files that contains the scrapped information from emulator.games using the core of <a href='https://github.com/Gr3gorywolf/EmulatorGamesSuperscrapper'>EmulatorGamesSuperscrapper</a> 
+<br><b>Multiple console sections:</b><br>This app have arround 8 console roms sections that have each arround 1000 roms and the roms info are downloaded from <a href='https://github.com/Gr3gorywolf/getromdownload'>Here</a> that contains a formatted text files that contains the scraped information from emulator.games using the core of <a href='https://github.com/Gr3gorywolf/EmulatorGamesSuperscrapper'>EmulatorGamesSuperscraper</a> 
 <br>
 <br>
 <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src='https://gr3gorywolf.github.io/NeonRom3r/sidemenu.jpeg' style='margin-left:25%'/><br>
