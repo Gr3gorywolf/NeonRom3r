@@ -8,7 +8,7 @@ using Android.OS;
 using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
-using emulatorgamessuperscraper;
+using emulatorgamessuperscrapper;
 using System.IO;
 using static Android.Icu.Text.DateFormat;
 using System.Net;

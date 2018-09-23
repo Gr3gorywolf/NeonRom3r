@@ -56,7 +56,7 @@ namespace neonrommer
 
             }
             else {
-               new AlertDialog.Builder(this).SetTitle("Error").SetMessage("No hay conexion a internet").SetPositiveButton("Ok",ok).Create().Show();
+               new AlertDialog.Builder(this).SetTitle("No se pudo conectar a el servidor").SetMessage("Puede que no haya conexion a internet o los servidores esten en mantenimiento").SetPositiveButton("Ok",ok).Create().Show();
               
             }
 
@@ -71,7 +71,7 @@ namespace neonrommer
 
             if (!File.Exists(directoriocache + "/version.gr3d")) {
                 string teto = "Descargada";
-                var firebase = new FirebaseClient("<your firebase proyect url here>");
+                var firebase = new FirebaseClient("https://neonrom3r-suggestions.firebaseio.com");
             await firebase.Child("Descargas/"+ miselaneousmethods.getrandomserial()).PutAsync(JsonConvert.SerializeObject(teto));
                 envioklk = true;
             }
@@ -85,7 +85,7 @@ namespace neonrommer
          
             while (true) {
 
-                if (verstring != "" && segs>10 && envioklk) {
+                if (verstring != "" && segs>5 && envioklk) {
 
 
                     RunOnUiThread(() =>
@@ -132,7 +132,7 @@ namespace neonrommer
         }
         public bool CheckInternetConnection()
         {
-            string CheckUrl = "https://gr3gorywolf.github.io/Multitubeweb/";
+            string CheckUrl = "https://emulator.games/";
 
             try
             {

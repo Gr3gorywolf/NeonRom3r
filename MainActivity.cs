@@ -15,7 +15,7 @@ using Android.Support.Design.Widget;
 using Android.Support.V7.App;
 using System.Security.Cryptography.X509Certificates;
 using System.Net.Security;
-using emulatorgamessuperscraper;
+using emulatorgamessuperscrapper;
 using Android.Glide;
 namespace neonrommer
 {
