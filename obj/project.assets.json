@@ -137,6 +137,15 @@
       "RxJS-Main/4.0.7": {
         "type": "package"
       },
+      "SharpZipLib/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll": {}
+        }
+      },
       "System.ComponentModel/4.0.1": {
         "type": "package",
         "compile": {
@@ -1057,6 +1066,20 @@
         "rxjs-main.nuspec"
       ]
     },
+    "SharpZipLib/1.0.0": {
+      "sha512": "38egGevtPMQn/6olZZUteKUC7+BD47LdCGKo9Vyj17+HWDwiqPXsyJu55q9WSybhwVKwt0q2FLhiuJjZfQpsHw==",
+      "type": "package",
+      "path": "sharpziplib/1.0.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net45/ICSharpCode.SharpZipLib.dll",
+        "lib/net45/ICSharpCode.SharpZipLib.xml",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.xml",
+        "sharpziplib.1.0.0.nupkg.sha512",
+        "sharpziplib.nuspec"
+      ]
+    },
     "System.ComponentModel/4.0.1": {
       "sha512": "oBZFnm7seFiVfugsIyOvQCWobNZs7FzqDV/B7tx20Ep/l3UUFCPDkdTnCNaJZTU27zjeODmy2C/cP60u3D4c9w==",
       "type": "package",
@@ -1758,6 +1781,7 @@
       "NETStandard.Library >= 2.0.0",
       "Newtonsoft.Json >= 11.0.2",
       "RxJS-Main >= 4.0.7",
+      "SharpZipLib >= 1.0.0",
       "Xamarin.Android.Support.Design >= 27.0.2.1",
       "Xamarin.Android.Support.v4 >= 27.0.2.1",
       "Xamarin.Android.Support.v7.AppCompat >= 27.0.2.1",
@@ -1828,6 +1852,10 @@
           "RxJS-Main": {
             "target": "Package",
             "version": "[4.0.7, )"
+          },
+          "SharpZipLib": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           },
           "Xamarin.Android.Support.Design": {
             "target": "Package",

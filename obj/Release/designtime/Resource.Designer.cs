@@ -2224,14 +2224,20 @@ namespace neonrommer
 			// aapt resource value: 0x7F090053
 			public const int abc_vector_test = 2131296339;
 			
+			// aapt resource value: 0x7F010002
+			public const int arcade = 2130771970;
+			
 			// aapt resource value: 0x7F090054
 			public const int avd_hide_password = 2131296340;
 			
 			// aapt resource value: 0x7F090055
 			public const int avd_show_password = 2131296341;
 			
-			// aapt resource value: 0x7F010002
-			public const int chartdonut = 2130771970;
+			// aapt resource value: 0x7F010003
+			public const int carpeta = 2130771971;
+			
+			// aapt resource value: 0x7F010004
+			public const int chartdonut = 2130771972;
 			
 			// aapt resource value: 0x7F090056
 			public const int design_bottom_navigation_item_background = 2131296342;
@@ -2251,62 +2257,71 @@ namespace neonrommer
 			// aapt resource value: 0x7F09005B
 			public const int design_snackbar_background = 2131296347;
 			
-			// aapt resource value: 0x7F010003
-			public const int download = 2130771971;
-			
-			// aapt resource value: 0x7F010004
-			public const int download24 = 2130771972;
-			
 			// aapt resource value: 0x7F010005
-			public const int elementosmenu = 2130771973;
+			public const int dots = 2130771973;
 			
 			// aapt resource value: 0x7F010006
-			public const int flagvariant = 2130771974;
+			public const int download = 2130771974;
 			
 			// aapt resource value: 0x7F010007
-			public const int game = 2130771975;
+			public const int download24 = 2130771975;
 			
 			// aapt resource value: 0x7F010008
-			public const int gameboy = 2130771976;
+			public const int dreamcast = 2130771976;
 			
 			// aapt resource value: 0x7F010009
-			public const int gamepad = 2130771977;
+			public const int elementosmenu = 2130771977;
 			
 			// aapt resource value: 0x7F010010
-			public const int gamepadvariant = 2130771984;
+			public const int flagvariant = 2130771984;
 			
 			// aapt resource value: 0x7F010011
-			public const int GBA = 2130771985;
+			public const int game = 2130771985;
 			
 			// aapt resource value: 0x7F010012
-			public const int hambur = 2130771986;
+			public const int gameboy = 2130771986;
 			
 			// aapt resource value: 0x7F010013
-			public const int home = 2130771987;
+			public const int gamepad = 2130771987;
 			
 			// aapt resource value: 0x7F010014
-			public const int information = 2130771988;
+			public const int gamepadvariant = 2130771988;
 			
 			// aapt resource value: 0x7F010015
-			public const int logo = 2130771989;
+			public const int GBA = 2130771989;
 			
 			// aapt resource value: 0x7F010016
-			public const int logolarge = 2130771990;
+			public const int hambur = 2130771990;
 			
 			// aapt resource value: 0x7F010017
-			public const int menutoolbar = 2130771991;
+			public const int home = 2130771991;
 			
 			// aapt resource value: 0x7F010018
-			public const int messagealert = 2130771992;
+			public const int information = 2130771992;
+			
+			// aapt resource value: 0x7F010019
+			public const int logo = 2130771993;
+			
+			// aapt resource value: 0x7F010020
+			public const int logolarge = 2130772000;
+			
+			// aapt resource value: 0x7F010021
+			public const int menutoolbar = 2130772001;
+			
+			// aapt resource value: 0x7F010022
+			public const int menutoolbarmain = 2130772002;
+			
+			// aapt resource value: 0x7F010023
+			public const int messagealert = 2130772003;
 			
 			// aapt resource value: 0x7F09005C
 			public const int navigation_empty_icon = 2131296348;
 			
-			// aapt resource value: 0x7F010019
-			public const int nintendo64console = 2130771993;
+			// aapt resource value: 0x7F010024
+			public const int nintendo64console = 2130772004;
 			
-			// aapt resource value: 0x7F010020
-			public const int nintendogamesconsole = 2130772000;
+			// aapt resource value: 0x7F010025
+			public const int nintendogamesconsole = 2130772005;
 			
 			// aapt resource value: 0x7F090001
 			public const int notification_action_background = 2131296257;
@@ -2344,20 +2359,20 @@ namespace neonrommer
 			// aapt resource value: 0x7F09000C
 			public const int notify_panel_notification_icon_bg = 2131296268;
 			
-			// aapt resource value: 0x7F010021
-			public const int playstation = 2130772001;
+			// aapt resource value: 0x7F010026
+			public const int playstation = 2130772006;
 			
-			// aapt resource value: 0x7F010022
-			public const int segamegadrive = 2130772002;
+			// aapt resource value: 0x7F010027
+			public const int segamegadrive = 2130772007;
 			
-			// aapt resource value: 0x7F010023
-			public const int sharevariant = 2130772003;
+			// aapt resource value: 0x7F010028
+			public const int sharevariant = 2130772008;
 			
-			// aapt resource value: 0x7F010024
-			public const int star = 2130772004;
+			// aapt resource value: 0x7F010029
+			public const int star = 2130772009;
 			
-			// aapt resource value: 0x7F010025
-			public const int supernintendo = 2130772005;
+			// aapt resource value: 0x7F010030
+			public const int supernintendo = 2130772016;
 			
 			// aapt resource value: 0x7F090069
 			public const int tooltip_frame_dark = 2131296361;
@@ -2394,8 +2409,8 @@ namespace neonrommer
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7F020011
-			public const int about = 2130837521;
+			// aapt resource value: 0x7F020007
+			public const int about = 2130837511;
 			
 			// aapt resource value: 0x7F0C0001
 			public const int action0 = 2131492865;
@@ -2451,8 +2466,8 @@ namespace neonrommer
 			// aapt resource value: 0x7F0C0011
 			public const int action_mode_close_button = 2131492881;
 			
-			// aapt resource value: 0x7F020035
-			public const int action_settings = 2130837557;
+			// aapt resource value: 0x7F020040
+			public const int action_settings = 2130837568;
 			
 			// aapt resource value: 0x7F0C0004
 			public const int action_text = 2131492868;
@@ -2493,11 +2508,11 @@ namespace neonrommer
 			// aapt resource value: 0x7F0C0008
 			public const int chronometer = 2131492872;
 			
-			// aapt resource value: 0x7F020013
-			public const int compartir = 2130837523;
+			// aapt resource value: 0x7F020009
+			public const int compartir = 2130837513;
 			
-			// aapt resource value: 0x7F020015
-			public const int consola = 2130837525;
+			// aapt resource value: 0x7F020011
+			public const int consola = 2130837521;
 			
 			// aapt resource value: 0x7F0C0020
 			public const int container = 2131492896;
@@ -2505,8 +2520,8 @@ namespace neonrommer
 			// aapt resource value: 0x7F0C0021
 			public const int contentPanel = 2131492897;
 			
-			// aapt resource value: 0x7F020021
-			public const int content_frame = 2130837537;
+			// aapt resource value: 0x7F020017
+			public const int content_frame = 2130837527;
 			
 			// aapt resource value: 0x7F0C0022
 			public const int coordinator = 2131492898;
@@ -2523,11 +2538,14 @@ namespace neonrommer
 			// aapt resource value: 0x7F0C0026
 			public const int default_activity_button = 2131492902;
 			
-			// aapt resource value: 0x7F020028
-			public const int descargar = 2130837544;
+			// aapt resource value: 0x7F020004
+			public const int descargados = 2130837508;
 			
-			// aapt resource value: 0x7F020012
-			public const int descargartool = 2130837522;
+			// aapt resource value: 0x7F020024
+			public const int descargar = 2130837540;
+			
+			// aapt resource value: 0x7F020008
+			public const int descargartool = 2130837512;
 			
 			// aapt resource value: 0x7F0C0027
 			public const int design_bottom_sheet = 2131492903;
@@ -2544,11 +2562,14 @@ namespace neonrommer
 			// aapt resource value: 0x7F0C002B
 			public const int design_navigation_view = 2131492907;
 			
-			// aapt resource value: 0x7F020016
-			public const int drawer_layout = 2130837526;
+			// aapt resource value: 0x7F020012
+			public const int drawer_layout = 2130837522;
 			
 			// aapt resource value: 0x7F0C002C
 			public const int edit_query = 2131492908;
+			
+			// aapt resource value: 0x7F020003
+			public const int emuladores = 2130837507;
 			
 			// aapt resource value: 0x7F0C002D
 			public const int end = 2131492909;
@@ -2556,11 +2577,11 @@ namespace neonrommer
 			// aapt resource value: 0x7F0C002E
 			public const int end_padder = 2131492910;
 			
-			// aapt resource value: 0x7F020034
-			public const int enviar = 2130837556;
+			// aapt resource value: 0x7F020031
+			public const int enviar = 2130837553;
 			
-			// aapt resource value: 0x7F020025
-			public const int estrella = 2130837541;
+			// aapt resource value: 0x7F020021
+			public const int estrella = 2130837537;
 			
 			// aapt resource value: 0x7F0C0030
 			public const int expanded_menu = 2131492912;
@@ -2568,8 +2589,8 @@ namespace neonrommer
 			// aapt resource value: 0x7F0C002F
 			public const int expand_activities_button = 2131492911;
 			
-			// aapt resource value: 0x7F020010
-			public const int feedback = 2130837520;
+			// aapt resource value: 0x7F020006
+			public const int feedback = 2130837510;
 			
 			// aapt resource value: 0x7F0C0031
 			public const int fill = 2131492913;
@@ -2580,14 +2601,14 @@ namespace neonrommer
 			// aapt resource value: 0x7F0C0009
 			public const int forever = 2131492873;
 			
-			// aapt resource value: 0x7F020002
-			public const int gameboy = 2130837506;
+			// aapt resource value: 0x7F020032
+			public const int gameboy = 2130837554;
 			
-			// aapt resource value: 0x7F020003
-			public const int gameboyc = 2130837507;
+			// aapt resource value: 0x7F020033
+			public const int gameboyc = 2130837555;
 			
-			// aapt resource value: 0x7F020004
-			public const int gba = 2130837508;
+			// aapt resource value: 0x7F020034
+			public const int gba = 2130837556;
 			
 			// aapt resource value: 0x7F0C0034
 			public const int ghost_view = 2131492916;
@@ -2604,8 +2625,11 @@ namespace neonrommer
 			// aapt resource value: 0x7F0C0038
 			public const int image = 2131492920;
 			
-			// aapt resource value: 0x7F020024
-			public const int imageView = 2130837540;
+			// aapt resource value: 0x7F020020
+			public const int imageView = 2130837536;
+			
+			// aapt resource value: 0x7F020027
+			public const int imageView2 = 2130837543;
 			
 			// aapt resource value: 0x7F0C000C
 			public const int info = 2131492876;
@@ -2628,14 +2652,14 @@ namespace neonrommer
 			// aapt resource value: 0x7F0C000F
 			public const int line3 = 2131492879;
 			
-			// aapt resource value: 0x7F020017
-			public const int linearLayout0 = 2130837527;
+			// aapt resource value: 0x7F020013
+			public const int linearLayout0 = 2130837523;
 			
 			// aapt resource value: 0x7F0C0040
 			public const int listMode = 2131492928;
 			
-			// aapt resource value: 0x7F020020
-			public const int listView1 = 2130837536;
+			// aapt resource value: 0x7F020016
+			public const int listView1 = 2130837526;
 			
 			// aapt resource value: 0x7F0C0041
 			public const int list_item = 2131492929;
@@ -2646,8 +2670,8 @@ namespace neonrommer
 			// aapt resource value: 0x7F0C0043
 			public const int media_actions = 2131492931;
 			
-			// aapt resource value: 0x7F020033
-			public const int Mensaje = 2130837555;
+			// aapt resource value: 0x7F020030
+			public const int Mensaje = 2130837552;
 			
 			// aapt resource value: 0x7F0C0044
 			public const int message = 2131492932;
@@ -2658,20 +2682,20 @@ namespace neonrommer
 			// aapt resource value: 0x7F0C0046
 			public const int multiply = 2131492934;
 			
-			// aapt resource value: 0x7F020018
-			public const int my_toolbar = 2130837528;
+			// aapt resource value: 0x7F020014
+			public const int my_toolbar = 2130837524;
 			
-			// aapt resource value: 0x7F020007
-			public const int n64 = 2130837511;
+			// aapt resource value: 0x7F020037
+			public const int n64 = 2130837559;
 			
 			// aapt resource value: 0x7F0C0047
 			public const int navigation_header_container = 2131492935;
 			
-			// aapt resource value: 0x7F020005
-			public const int nintendo = 2130837509;
+			// aapt resource value: 0x7F020035
+			public const int nintendo = 2130837557;
 			
-			// aapt resource value: 0x7F020031
-			public const int Nombre = 2130837553;
+			// aapt resource value: 0x7F020028
+			public const int Nombre = 2130837544;
 			
 			// aapt resource value: 0x7F0C0048
 			public const int none = 2131492936;
@@ -2700,14 +2724,14 @@ namespace neonrommer
 			// aapt resource value: 0x7F0C0050
 			public const int pin = 2131492944;
 			
-			// aapt resource value: 0x7F020008
-			public const int playstation = 2130837512;
+			// aapt resource value: 0x7F020038
+			public const int playstation = 2130837560;
 			
-			// aapt resource value: 0x7F020023
-			public const int portada = 2130837539;
+			// aapt resource value: 0x7F020019
+			public const int portada = 2130837529;
 			
-			// aapt resource value: 0x7F020014
-			public const int portada2 = 2130837524;
+			// aapt resource value: 0x7F020010
+			public const int portada2 = 2130837520;
 			
 			// aapt resource value: 0x7F0C0051
 			public const int progress_circular = 2131492945;
@@ -2718,8 +2742,8 @@ namespace neonrommer
 			// aapt resource value: 0x7F0C0053
 			public const int radio = 2131492947;
 			
-			// aapt resource value: 0x7F020027
-			public const int region = 2130837543;
+			// aapt resource value: 0x7F020023
+			public const int region = 2130837539;
 			
 			// aapt resource value: 0x7F0C0054
 			public const int right = 2131492948;
@@ -2729,6 +2753,12 @@ namespace neonrommer
 			
 			// aapt resource value: 0x7F0C0015
 			public const int right_side = 2131492885;
+			
+			// aapt resource value: 0x7F020002
+			public const int roms = 2130837506;
+			
+			// aapt resource value: 0x7F020005
+			public const int rutas = 2130837509;
 			
 			// aapt resource value: 0x7F0C0057
 			public const int save_image_matrix = 2131492951;
@@ -2754,8 +2784,8 @@ namespace neonrommer
 			// aapt resource value: 0x7F0C005D
 			public const int scrollView = 2131492957;
 			
-			// aapt resource value: 0x7F020019
-			public const int searchView = 2130837529;
+			// aapt resource value: 0x7F020015
+			public const int searchView = 2130837525;
 			
 			// aapt resource value: 0x7F0C005F
 			public const int search_badge = 2131492959;
@@ -2787,8 +2817,8 @@ namespace neonrommer
 			// aapt resource value: 0x7F0C0068
 			public const int search_voice_btn = 2131492968;
 			
-			// aapt resource value: 0x7F020009
-			public const int sega = 2130837513;
+			// aapt resource value: 0x7F020039
+			public const int sega = 2130837561;
 			
 			// aapt resource value: 0x7F0C0069
 			public const int select_dialog_listview = 2131492969;
@@ -2832,8 +2862,8 @@ namespace neonrommer
 			// aapt resource value: 0x7F0C0076
 			public const int submit_area = 2131492982;
 			
-			// aapt resource value: 0x7F020006
-			public const int supernintendo = 2130837510;
+			// aapt resource value: 0x7F020036
+			public const int supernintendo = 2130837558;
 			
 			// aapt resource value: 0x7F0C0077
 			public const int tabMode = 2131492983;
@@ -2841,8 +2871,8 @@ namespace neonrommer
 			// aapt resource value: 0x7F0C0016
 			public const int tag_transition_group = 2131492886;
 			
-			// aapt resource value: 0x7F020026
-			public const int tamano = 2130837542;
+			// aapt resource value: 0x7F020022
+			public const int tamano = 2130837538;
 			
 			// aapt resource value: 0x7F0C0017
 			public const int text = 2131492887;
@@ -2862,11 +2892,11 @@ namespace neonrommer
 			// aapt resource value: 0x7F0C007C
 			public const int textSpacerNoTitle = 2131492988;
 			
-			// aapt resource value: 0x7F020029
-			public const int textView = 2130837545;
+			// aapt resource value: 0x7F020025
+			public const int textView = 2130837541;
 			
-			// aapt resource value: 0x7F020030
-			public const int textView2 = 2130837552;
+			// aapt resource value: 0x7F020026
+			public const int textView2 = 2130837542;
 			
 			// aapt resource value: 0x7F0C007D
 			public const int text_input_password_toggle = 2131492989;
@@ -2883,11 +2913,11 @@ namespace neonrommer
 			// aapt resource value: 0x7F0C0083
 			public const int title_template = 2131492995;
 			
-			// aapt resource value: 0x7F020032
-			public const int titulo = 2130837554;
+			// aapt resource value: 0x7F020029
+			public const int titulo = 2130837545;
 			
-			// aapt resource value: 0x7F020022
-			public const int toolbar_title = 2130837538;
+			// aapt resource value: 0x7F020018
+			public const int toolbar_title = 2130837528;
 			
 			// aapt resource value: 0x7F0C0084
 			public const int top = 2131492996;
@@ -3120,7 +3150,10 @@ namespace neonrommer
 			public const int layoutbuscadorconcarta = 2130903046;
 			
 			// aapt resource value: 0x7F030007
-			public const int layoutcabecera = 2130903047;
+			public const int layoutbuscadorconmenu = 2130903047;
+			
+			// aapt resource value: 0x7F030008
+			public const int layoutcabecera = 2130903048;
 			
 			// aapt resource value: 0x7F0F0001
 			public const int notification_action = 2131689473;
@@ -3176,11 +3209,11 @@ namespace neonrommer
 			// aapt resource value: 0x7F0F003A
 			public const int select_dialog_singlechoice_material = 2131689530;
 			
-			// aapt resource value: 0x7F030008
-			public const int splashcreen = 2130903048;
-			
 			// aapt resource value: 0x7F030009
-			public const int Sugerencias = 2130903049;
+			public const int splashcreen = 2130903049;
+			
+			// aapt resource value: 0x7F030010
+			public const int Sugerencias = 2130903056;
 			
 			// aapt resource value: 0x7F0F003B
 			public const int support_simple_spinner_dropdown_item = 2131689531;
@@ -3205,10 +3238,16 @@ namespace neonrommer
 			public const int elementosmenu = 2130968578;
 			
 			// aapt resource value: 0x7F040003
-			public const int menutoolbar = 2130968579;
+			public const int menupopup = 2130968579;
 			
 			// aapt resource value: 0x7F040004
-			public const int menu_main = 2130968580;
+			public const int menutoolbar = 2130968580;
+			
+			// aapt resource value: 0x7F040005
+			public const int menutoolbarmain = 2130968581;
+			
+			// aapt resource value: 0x7F040006
+			public const int menu_main = 2130968582;
 			
 			static Menu()
 			{

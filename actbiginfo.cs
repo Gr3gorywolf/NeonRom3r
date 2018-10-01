@@ -12,6 +12,9 @@ using emulatorgamessuperscrapper;
 using System.IO;
 using static Android.Icu.Text.DateFormat;
 using System.Net;
+using System.Linq;
+using System.Collections.Generic;
+using Newtonsoft.Json;
 namespace neonrommer
 {
     [Activity(Label = "NeonRommer", Theme = "@style/Theme.DesignDemo", ConfigurationChanges = Android.Content.PM.ConfigChanges.Orientation | Android.Content.PM.ConfigChanges.ScreenSize)]
@@ -21,6 +24,7 @@ namespace neonrommer
         public string romid;
         public string nombre;
         string imagen;
+        string consolaa;
         public TextView consola;
         public TextView estrella;
         public TextView size;
@@ -29,9 +33,12 @@ namespace neonrommer
         public TextView titulo;
         public ImageView portada;
         public string imgcache = Android.OS.Environment.ExternalStorageDirectory + "/.romercache/catched.jpg";
+        public Dictionary<string, string> dicciopath = new Dictionary<string, string>();
 #pragma warning disable CS0618 // El tipo o el miembro están obsoletos
         public ProgressDialog dialogoprogreso;
 #pragma warning restore CS0618 // El tipo o el miembro están obsoletos
+      public static  actbiginfo contexto;
+        public static string[] consolelistformal = { "Gameboy", "Gameboy Color", "Gameboy Advance", "Nintendo", "Super Nintendo", "Nintendo 64", "Playstation", "SEGA Genesis", "Dreamcast" };
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -68,8 +75,11 @@ namespace neonrommer
 
            
             // Create your application here
+            contexto = this;
         }
-     
+        public static actbiginfo gettearinstancia() {
+            return contexto;
+        }
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             if (!initialized) {
@@ -138,7 +148,7 @@ namespace neonrommer
                 dialogoprogreso.SetMessage("Por favor espere");
                 dialogoprogreso.Show();
             });
-            var ruta = Path.Combine(Android.OS.Environment.ExternalStorageDirectory.AbsolutePath, Android.OS.Environment.DirectoryDownloads); 
+            var ruta = dicciopath[miselaneousmethods.consolelist[consolelistformal.ToList().IndexOf(consola.Text)]];
             if (!Directory.Exists(ruta))
                 Directory.CreateDirectory(ruta);
             var link = new superscraper().getdownloadlink(romid).Result;
@@ -147,12 +157,30 @@ namespace neonrommer
             requ.SetDescription("Espere por favor");
             requ.SetNotificationVisibility(DownloadVisibility.VisibleNotifyCompleted);
             requ.SetTitle(nombre);
-            var destino = Android.Net.Uri.FromFile(new Java.IO.File(ruta + "/" + nombre + ".zip"));
+            Android.Net.Uri destino = null;
+            if (consola.Text.ToLower()!="playstation")
+              destino=Android.Net.Uri.FromFile(new Java.IO.File(ruta + "/" + nombre + ".zip"));
+            else
+                destino = Android.Net.Uri.FromFile(new Java.IO.File(ruta + "/" + nombre + ".7z"));
             requ.SetDestinationUri(destino);
             requ.SetVisibleInDownloadsUi(true);
             manige.Enqueue(requ);
             dialogoprogreso.Dismiss();
             RunOnUiThread(() => Toast.MakeText(this, "Descarga iniciada!!", ToastLength.Long).Show());
+            miselaneousmethods.guardarenregistry(nombre, destino.Path, imagen, consola.Text,link.Replace(" ", "%20"));
+          //  miselaneousmethods.guardarenregistrydescargas(nombre, destino.Path, imagen, consola.Text, link.Replace(" ", "%20"));
+            new Thread(() =>
+            {
+
+                using (WebClient cliente = new WebClient()) {
+
+                    if (!Directory.Exists(miselaneousmethods.imgpath))
+                        Directory.CreateDirectory(miselaneousmethods.imgpath);
+                    cliente.DownloadFile(imagen, miselaneousmethods.imgpath + "/" + nombre + ".jpg");
+                }
+            }).Start();
+
+    
 
         }
 
@@ -165,10 +193,11 @@ namespace neonrommer
 #pragma warning restore CS0618 // El tipo o el miembro están obsoletos
                 dialogoprogreso.SetCanceledOnTouchOutside(false);
                 dialogoprogreso.SetCancelable(false);
-                dialogoprogreso.SetTitle("Obteniendo informacion de el rom...");
+                dialogoprogreso.SetTitle("Obteniendo información del rom...");
                 dialogoprogreso.SetMessage("Por favor espere");
                 dialogoprogreso.Show();
             });
+            dicciopath = JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText(miselaneousmethods.cachepath + "/paths.json"));
             superscraper escrapeador = new superscraper();
             var objeto =escrapeador.getrominfo(linkinfo).Result;
             romid = objeto.id;
@@ -176,6 +205,7 @@ namespace neonrommer
             imagen = objeto.imagen;
             RunOnUiThread(() =>
             {
+                consolaa = objeto.consola;
                 consola.Text = objeto.consola;
                 if (objeto.votos.Contains("5")) {
                     estrella.Text = objeto.votos;

@@ -37,28 +37,42 @@ namespace neonrommer
             logo = FindViewById<ImageView>(Resource.Id.portada2);
 
             animar3(logo);
-            if (CheckInternetConnection())
+
+            new Thread(() =>
             {
-                List<string> arraydatos = new List<string>();
-                arraydatos.Add(Android.Manifest.Permission.ReadExternalStorage);
-                arraydatos.Add(Android.Manifest.Permission.WriteExternalStorage);
-                if (Build.VERSION.SdkInt >= BuildVersionCodes.M)
+                if (CheckInternetConnection())
                 {
-                    RequestPermissions(arraydatos.ToArray(), 0);
+                    List<string> arraydatos = new List<string>();
+                    arraydatos.Add(Android.Manifest.Permission.ReadExternalStorage);
+                    arraydatos.Add(Android.Manifest.Permission.WriteExternalStorage);
+                    if (Build.VERSION.SdkInt >= BuildVersionCodes.M)
+                    {
+                        RunOnUiThread(() =>
+                        {
+                            RequestPermissions(arraydatos.ToArray(), 0);
+                        });
+                    }
+                    else
+                    {
+                        enviarvainilla();
+                    }
+
+
+                    verstring = new WebClient().DownloadString("https://gr3gorywolf.github.io/getromdownload/version.gr3v");
+                    new Thread(() => { poner(); }).Start();
 
                 }
-                else {
-                    enviarvainilla();
-                }
-               
-                verstring = new WebClient().DownloadString("https://gr3gorywolf.github.io/getromdownload/version.gr3v");
-                new Thread(() => { poner(); }).Start();
-
-            }
-            else {
-               new AlertDialog.Builder(this).SetTitle("No se pudo conectar a el servidor").SetMessage("Puede que no haya conexion a internet o los servidores esten en mantenimiento").SetPositiveButton("Ok",ok).Create().Show();
-              
-            }
+                else
+                {
+                    RunOnUiThread(() =>
+                    {
+                        if (File.Exists(miselaneousmethods.archivoregistro))
+                            new AlertDialog.Builder(this).SetTitle("No se pudo conectar a el servidor").SetMessage("Puede que no haya conexion a internet o los servidores estén en mantenimiento. Usted puede entrar a la app en el modo offline en el cual podrá usar solo ciertas funciones").SetCancelable(false).SetNegativeButton("Cerrar", ok).SetPositiveButton("Abrir en modo offline", off).Create().Show();
+                        else
+                            new AlertDialog.Builder(this).SetTitle("No se pudo conectar a el servidor").SetMessage("Puede que no haya conexion a internet o los servidores estén en mantenimiento. El modo offline se habilitará cuando usted tenga descargado almenos 1 rom").SetCancelable(true).SetPositiveButton("Ok", ok).Create().Show();
+                    });
+                    }
+            }).Start();
 
             // Create your application here
         }
@@ -67,13 +81,42 @@ namespace neonrommer
 
             this.Finish();
         }
-            public async void enviarvainilla() {
+        public void off(object sender, EventArgs e)
+        {
+            
+            Intent intento = new Intent(this, typeof(MainActivity));
+            intento.PutExtra("online", false);
+            StartActivity(intento);
+            this.Finish();
+        }
+        public async void enviarvainilla() {
+
+            if (!File.Exists(directoriocache + "/paths.json"))
+            {
+
+                Dictionary<string, string> dic = new Dictionary<string, string>();
+                string downloadpath = Path.Combine(Android.OS.Environment.ExternalStorageDirectory.AbsolutePath, Android.OS.Environment.DirectoryDownloads);
+                foreach (var axd in miselaneousmethods.consolelist)
+                {
+                    dic.Add(axd, downloadpath);
+
+                }
+                var xdd = File.CreateText(directoriocache + "/paths.json");
+                xdd.Write(JsonConvert.SerializeObject(dic));
+                xdd.Close();
+
+            }
+
 
             if (!File.Exists(directoriocache + "/version.gr3d")) {
                 string teto = "Descargada";
-                var firebase = new FirebaseClient("<tu url de firebase>");
+                var firebase = new FirebaseClient("https://neonrom3r-suggestions.firebaseio.com");
             await firebase.Child("Descargas/"+ miselaneousmethods.getrandomserial()).PutAsync(JsonConvert.SerializeObject(teto));
+
+               
                 envioklk = true;
+
+
             }
             else {
                 envioklk = true;
@@ -94,6 +137,7 @@ namespace neonrommer
 
                         Intent intento = new Intent(this, typeof(MainActivity));
                         intento.PutExtra("ver", verstring);
+                        intento.PutExtra("online", true);
                         StartActivity(intento);
                         this.Finish();
                     });
@@ -138,7 +182,7 @@ namespace neonrommer
             {
                 HttpWebRequest iNetRequest = (HttpWebRequest)WebRequest.Create(CheckUrl);
 
-                iNetRequest.Timeout =10000;
+                iNetRequest.Timeout =35000;
 
                 WebResponse iNetResponse = iNetRequest.GetResponse();
 

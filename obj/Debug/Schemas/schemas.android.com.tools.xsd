@@ -2,7 +2,7 @@
 <xs:schema xmlns:tools="http://schemas.android.com/tools" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/tools" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v26</xs:documentation>
-    <xs:documentation>13/09/2018 11:17:48</xs:documentation>
+    <xs:documentation>01/10/2018 12:46:45</xs:documentation>
   </xs:annotation>
   <xs:attribute name="layout">
     <xs:annotation>
@@ -57,6 +57,7 @@
             <xs:enumeration value="@layout/design_text_input_password_icon" />
             <xs:enumeration value="@layout/layoutbiginfo" />
             <xs:enumeration value="@layout/layoutbuscadorconcarta" />
+            <xs:enumeration value="@layout/layoutbuscadorconmenu" />
             <xs:enumeration value="@layout/layoutcabecera" />
             <xs:enumeration value="@layout/notification_action" />
             <xs:enumeration value="@layout/notification_action_tombstone" />
@@ -162,6 +163,7 @@
             <xs:enumeration value="@layout/design_text_input_password_icon" />
             <xs:enumeration value="@layout/layoutbiginfo" />
             <xs:enumeration value="@layout/layoutbuscadorconcarta" />
+            <xs:enumeration value="@layout/layoutbuscadorconmenu" />
             <xs:enumeration value="@layout/layoutcabecera" />
             <xs:enumeration value="@layout/notification_action" />
             <xs:enumeration value="@layout/notification_action_tombstone" />
@@ -267,6 +269,7 @@
             <xs:enumeration value="@layout/design_text_input_password_icon" />
             <xs:enumeration value="@layout/layoutbiginfo" />
             <xs:enumeration value="@layout/layoutbuscadorconcarta" />
+            <xs:enumeration value="@layout/layoutbuscadorconmenu" />
             <xs:enumeration value="@layout/layoutcabecera" />
             <xs:enumeration value="@layout/notification_action" />
             <xs:enumeration value="@layout/notification_action_tombstone" />
@@ -372,6 +375,7 @@
             <xs:enumeration value="@layout/design_text_input_password_icon" />
             <xs:enumeration value="@layout/layoutbiginfo" />
             <xs:enumeration value="@layout/layoutbuscadorconcarta" />
+            <xs:enumeration value="@layout/layoutbuscadorconmenu" />
             <xs:enumeration value="@layout/layoutcabecera" />
             <xs:enumeration value="@layout/notification_action" />
             <xs:enumeration value="@layout/notification_action_tombstone" />

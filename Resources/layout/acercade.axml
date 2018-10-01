@@ -24,7 +24,7 @@
             android:id="@+id/consola"
             android:layout_gravity="center"
             android:layout_marginLeft="20dp"
-            android:text="Esta aplicación fue desarrollada por Gregory Alexander Cabral De Los Santos con Xamarin.android con la intención de aprender mas acerca de la librería de compactibilidad y webscrapping. por ende esta aplicación nunca tendrá publicidad y  es sin fin lucro pero lo único que se pide es que  por favor deje su sugerencia u opiniones en la sección de feedback                                                                                                                                                                                 © 2018 GR3    Github:Gr3gorywolf"
+            android:text="Esta aplicación fue desarrollada por Gregory Alexander Cabral De Los Santos con Xamarin.android con la intención de aprender mas acerca de la librería de compatibilidad y webscrapping. por ende esta aplicación nunca tendrá publicidad y  es sin fin lucro pero lo único que se pide es que  por favor deje su sugerencia u opiniones en la sección de feedback                                                                                                                                                                                 © 2018 GR3    Github:Gr3gorywolf"
             android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp" />

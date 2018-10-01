@@ -1,66 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
 <menu    xmlns:android="http://schemas.android.com/apk/res/android"  >
-  <group android:checkableBehavior="single">
- 
-    
-    <item
-   
-    android:id="@+id/gameboy"
-      android:icon="@drawable/gameboy"
-    android:title="Gameboy"
-    ></item>
-    <item
-      
-        android:id="@+id/gameboyc"
-          android:icon="@drawable/game"
-        android:title="Gameboy Color"
-     
-      >
-    </item>
+  <group android:checkableBehavior="none">
+
 
     <item
-     
-       android:id="@+id/gba"
-       android:icon="@drawable/GBA"
-      android:title="Gameboy Advance"
-      >
-    </item>
-   
-    <item
-     
-      android:id="@+id/nintendo"
-      android:icon="@drawable/nintendogamesconsole"
-     android:title="Nintendo"
-      >
+    android:id="@+id/roms"
+    android:icon="@drawable/gamepadvariant"
+   android:title="Roms">
     </item>
     <item
-     
-    android:id="@+id/supernintendo"
-    android:icon="@drawable/supernintendo"
-   android:title="Super nintendo"
-      >
+   android:id="@+id/emuladores"
+   android:icon="@drawable/arcade"
+  android:title="Emuladores">
+    </item>
+      <item 
+     android:id="@+id/descargados"
+     android:icon="@drawable/download"
+    android:title="Roms descargados">
     </item>
     <item
-     
-   android:id="@+id/n64"
-   android:icon="@drawable/nintendo64console"
-  android:title="Nintendo 64"
-      >
-    </item>
-    <item
-     
-          android:id="@+id/playstation"
-          android:icon="@drawable/playstation"
-         android:title="Playstation"
-      >
-    </item>
-    <item
-     
-      android:id="@+id/sega"
-      android:icon="@drawable/segamegadrive"
-     android:title="Sega megadrive"
-      >
+     android:id="@+id/rutas"
+     android:icon="@drawable/carpeta"
+    android:title="Carpetas de descargas">
     </item>
     <item 
      android:id="@+id/feedback"
@@ -72,6 +34,7 @@
      android:icon="@drawable/information"
      android:title="Acerca de" >
     </item>
+    
 
   </group>
 </menu>

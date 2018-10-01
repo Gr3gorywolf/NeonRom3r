@@ -22,11 +22,13 @@ namespace neonrommer
 
         Context context;
         public List<Models.romsinfos> lista = new List<Models.romsinfos>();
+       public int[] consolesources = null;
         int src = 0;
-        public adaptadorroms(Context context, List<Models.romsinfos> list,int srcid)
+        public adaptadorroms(Context context, List<Models.romsinfos> list,int srcid,int[]consolesourcess=null)
         {
             lista = list;
             src = srcid;
+            consolesources = consolesourcess;
             this.context = context;
         }
 
@@ -63,9 +65,19 @@ namespace neonrommer
                 holder.portrait= view.FindViewById<ImageView>(Resource.Id.imageView);
                 miselaneousmethods.ponerfuente(context.Assets, holder.Title);
                 miselaneousmethods.ponerfuente(context.Assets, holder.Title2);
+                int idd = 0;
+                if (consolesources != null)
+                {
+                    idd = consolesources[position];
+                }
+                else
+                {
+                    idd = src;
+                }
+
                 Glide.With(context)
                 .Load(lista[position].imagen)
-                .Apply(RequestOptions.NoTransformation().SkipMemoryCache(true).Override(60, 60).Placeholder(src))
+                .Apply(RequestOptions.NoTransformation().SkipMemoryCache(true).Override(75, 75).Placeholder(idd))
                 .Into(holder.portrait);
                 holder.portrait.SetTag(Resource.Id.imageView, lista[position].imagen);
                 view.Tag = holder;
@@ -83,12 +95,22 @@ namespace neonrommer
             {
                 try
                 {
-                  
+                    int idd = 0;
+                    if (consolesources != null)
+                    {
+                        idd = consolesources[position];
+                    }
+                    else {
+                        idd = src;
+                    }
                         Glide.With(context)
                       .Load(lista[position].imagen)
                   
                      
-                       .Apply(RequestOptions.NoTransformation().SkipMemoryCache(true).Override(60,60).Placeholder(src))
+                       .Apply(RequestOptions.NoTransformation().SkipMemoryCache(true).Override(75,75)
+                     
+                       .Placeholder(idd))
+
                        .Into(holder.portrait);
                    
                 }
@@ -102,7 +124,7 @@ namespace neonrommer
             //fill in your items
             //holder.Title.Text = "new text here";
             holder.Title.Text = lista[position].nombre;
-            holder.Title2.Text = lista[position].descargas+" Descargas";
+            holder.Title2.Text = lista[position].descargas;
             holder.portrait.SetTag(Resource.Id.imageView, lista[position].imagen);
            
             return view;

@@ -34,5 +34,24 @@ namespace neonrommer
             public string size { get; set; }
 
         }
+
+        public class emuladores {
+
+            public string nombre { get; set; }
+            public string imagen { get; set; }
+            public string link { get; set; }
+            public string compactible { get; set; }
+        }
+        public class registry
+        {
+
+            public string nombre { get; set; }
+            public string path { get; set; }
+            public string consola { get; set; }
+            public string portadalink { get; set; }
+            public string linkdescarga { get; set; }
+
+        }
+
     }
 }

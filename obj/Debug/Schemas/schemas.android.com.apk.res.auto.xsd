@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v26</xs:documentation>
-    <xs:documentation>13/09/2018 11:17:48</xs:documentation>
+    <xs:documentation>01/10/2018 12:46:45</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -543,8 +543,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -552,8 +554,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -567,6 +571,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -1175,8 +1180,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -1184,8 +1191,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -1199,6 +1208,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -1751,8 +1761,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -1760,8 +1772,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -1775,6 +1789,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -2304,8 +2319,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -2313,8 +2330,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -2328,6 +2347,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -3181,8 +3201,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -3190,8 +3212,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -3205,6 +3229,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -3734,8 +3759,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -3743,8 +3770,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -3758,6 +3787,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -4366,8 +4396,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -4375,8 +4407,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -4390,6 +4424,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -5353,8 +5388,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -5362,8 +5399,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -5377,6 +5416,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -5906,8 +5946,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -5915,8 +5957,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -5930,6 +5974,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -7504,8 +7549,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -7513,8 +7560,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -7528,6 +7577,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -8115,8 +8165,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -8124,8 +8176,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -8139,6 +8193,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -8668,8 +8723,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -8677,8 +8734,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -8692,6 +8751,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -9221,8 +9281,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -9230,8 +9292,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -9245,6 +9309,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -9774,8 +9839,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -9783,8 +9850,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -9798,6 +9867,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -10369,8 +10439,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -10378,8 +10450,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -10393,6 +10467,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -10922,8 +10997,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -10931,8 +11008,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -10946,6 +11025,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -11559,8 +11639,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -11568,8 +11650,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -11583,6 +11667,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -12332,8 +12417,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -12341,8 +12428,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -12356,6 +12445,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -12956,8 +13046,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -12965,8 +13057,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -12980,6 +13074,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -13692,8 +13787,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -13701,8 +13798,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -13716,6 +13815,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -14428,8 +14528,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -14437,8 +14539,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -14452,6 +14556,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -14981,8 +15086,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -14990,8 +15097,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -15005,6 +15114,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -16138,8 +16248,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -16147,8 +16259,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -16162,6 +16276,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -16770,8 +16885,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -16779,8 +16896,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -16794,6 +16913,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -17402,8 +17522,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -17411,8 +17533,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -17426,6 +17550,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -18406,8 +18531,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -18415,8 +18542,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -18430,6 +18559,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -19486,8 +19616,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -19495,8 +19627,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -19510,6 +19644,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -20039,8 +20174,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -20048,8 +20185,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -20063,6 +20202,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -20762,8 +20902,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -20771,8 +20913,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -20786,6 +20930,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -21498,8 +21643,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -21507,8 +21654,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -21522,6 +21671,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -22063,8 +22213,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -22072,8 +22224,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -22087,6 +22241,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -22799,8 +22954,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -22808,8 +22965,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -22823,6 +22982,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -23744,8 +23904,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -23753,8 +23915,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -23768,6 +23932,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -24297,8 +24462,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -24306,8 +24473,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -24321,6 +24490,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -27010,8 +27180,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -27019,8 +27191,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -27034,6 +27208,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -29374,8 +29549,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -29383,8 +29560,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -29398,6 +29577,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -30110,8 +30290,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -30119,8 +30301,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -30134,6 +30318,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -30663,8 +30848,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -30672,8 +30859,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -30687,6 +30876,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />
@@ -31460,8 +31650,10 @@
             <xs:enumeration value="@drawable/abc_textfield_search_default_mtrl_alpha" />
             <xs:enumeration value="@drawable/abc_textfield_search_material" />
             <xs:enumeration value="@drawable/abc_vector_test" />
+            <xs:enumeration value="@drawable/arcade" />
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
+            <xs:enumeration value="@drawable/carpeta" />
             <xs:enumeration value="@drawable/chartdonut" />
             <xs:enumeration value="@drawable/design_bottom_navigation_item_background" />
             <xs:enumeration value="@drawable/design_fab_background" />
@@ -31469,8 +31661,10 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/dots" />
             <xs:enumeration value="@drawable/download" />
             <xs:enumeration value="@drawable/download24" />
+            <xs:enumeration value="@drawable/dreamcast" />
             <xs:enumeration value="@drawable/elementosmenu" />
             <xs:enumeration value="@drawable/flagvariant" />
             <xs:enumeration value="@drawable/game" />
@@ -31484,6 +31678,7 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logolarge" />
             <xs:enumeration value="@drawable/menutoolbar" />
+            <xs:enumeration value="@drawable/menutoolbarmain" />
             <xs:enumeration value="@drawable/messagealert" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/nintendo64console" />

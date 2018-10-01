@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
   <Jars>
+    <Jar>obj\Release\lp\2\jl\glide-full-4.7.0.jar</Jar>
+    <Jar>obj\Release\lp\12\jl\arch-core-common.jar</Jar>
+    <Jar>obj\Release\lp\13\jl\arch-lifecycle-common.jar</Jar>
+    <Jar>obj\Release\lp\16\jl\support-annotations.jar</Jar>
     <Jar>D:\Proyectos c#\neonrommer\neonrommer\obj\Release\lp\12\jl\arch-core-common.jar</Jar>
     <Jar>D:\Proyectos c#\neonrommer\neonrommer\obj\Release\lp\13\jl\arch-lifecycle-common.jar</Jar>
     <Jar>D:\Proyectos c#\neonrommer\neonrommer\obj\Release\lp\14\jl\bin\classes.jar</Jar>
