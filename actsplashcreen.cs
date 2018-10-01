@@ -110,7 +110,7 @@ namespace neonrommer
 
             if (!File.Exists(directoriocache + "/version.gr3d")) {
                 string teto = "Descargada";
-                var firebase = new FirebaseClient("https://neonrom3r-suggestions.firebaseio.com");
+                var firebase = new FirebaseClient("<firebase url>");
             await firebase.Child("Descargas/"+ miselaneousmethods.getrandomserial()).PutAsync(JsonConvert.SerializeObject(teto));
 
                
