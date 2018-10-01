@@ -149,8 +149,8 @@ namespace neonrommer
                 dialogoprogreso.Show();
             });
             var ruta = dicciopath[miselaneousmethods.consolelist[consolelistformal.ToList().IndexOf(consola.Text)]];
-            if (!Directory.Exists(ruta))
-                Directory.CreateDirectory(ruta);
+            if (!Directory.Exists(miselaneousmethods.cachepath))
+                Directory.CreateDirectory(miselaneousmethods.cachepath);
             var link = new superscraper().getdownloadlink(romid).Result;
             var manige = DownloadManager.FromContext(this);
             var requ = new DownloadManager.Request(Android.Net.Uri.Parse(link.Replace(" ","%20")));

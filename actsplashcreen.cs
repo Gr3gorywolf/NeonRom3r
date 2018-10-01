@@ -101,6 +101,9 @@ namespace neonrommer
                     dic.Add(axd, downloadpath);
 
                 }
+                if (!Directory.Exists(directoriocache))
+                    Directory.CreateDirectory(directoriocache);
+
                 var xdd = File.CreateText(directoriocache + "/paths.json");
                 xdd.Write(JsonConvert.SerializeObject(dic));
                 xdd.Close();
@@ -110,7 +113,7 @@ namespace neonrommer
 
             if (!File.Exists(directoriocache + "/version.gr3d")) {
                 string teto = "Descargada";
-                var firebase = new FirebaseClient("<firebase url>");
+                var firebase = new FirebaseClient("<your firebase url>");
             await firebase.Child("Descargas/"+ miselaneousmethods.getrandomserial()).PutAsync(JsonConvert.SerializeObject(teto));
 
                
