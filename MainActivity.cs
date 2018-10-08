@@ -26,10 +26,10 @@ namespace neonrommer
 	public class MainActivity : AppCompatActivity
 	{
         ///////estatuscodes
-        //////0-roms search
+        //////0-rom console selected
         //////1-rom downloads
-        //////2-romselection
-        //////3-emulator console search
+        //////2-roms consoles chooser
+        //////3-emulators consoles choser
         //////4-emulator consoles selected
         ///5-pathchanging
   
@@ -51,8 +51,8 @@ namespace neonrommer
 #pragma warning disable CS0618 // El tipo o el miembro están obsoletos
         public ProgressDialog dialogoprogreso;
 #pragma warning restore CS0618 // El tipo o el miembro están obsoletos
-    
-
+        List<string> downloadlinks = new List<string>();
+        public static bool presionadounavez = false;
         protected override void OnCreate(Bundle savedInstanceState)
 		{
 			base.OnCreate(savedInstanceState);
@@ -188,13 +188,17 @@ namespace neonrommer
                 if (online) { 
                 llenarlistas();
                 cargarconsolas();
+          
                 }
                 else {
                     cargardescargas();
                     }
                 //  cargarconsola(0);
             }).Start();
-
+            new Thread(() =>
+            {
+                alertifnewdowload();
+            }).Start();
 
             ////////////////////////////////
             itemsm.NavigationItemSelected += (sender, e) =>
@@ -222,6 +226,7 @@ namespace neonrommer
                   
                         if (File.Exists(miselaneousmethods.archivoregistro))
                     {
+                        searchview.SetQuery("", true);
                         new Thread(() =>
                         {
                             cargardescargas();
@@ -237,7 +242,7 @@ namespace neonrommer
                 if (nombreconsola == "Roms") {
 
                     if (online) {
-
+                        searchview.SetQuery("", true);
                         new Thread(() =>
                         {
                             cargarconsolas();
@@ -253,7 +258,7 @@ namespace neonrommer
 
                     if (online)
                     {
-
+                        searchview.SetQuery("", true);
                         new Thread(() =>
                         {
                            cargaremuladores();
@@ -264,11 +269,14 @@ namespace neonrommer
                 }
                 if (nombreconsola == "Carpetas de descargas")
                 {
-                        new Thread(() =>
+                    searchview.SetQuery("", true);
+                    new Thread(() =>
                         {
                             cargarrutas();
                         }).Start();
                    
+                
+
                 }
                 e.MenuItem.SetChecked(false);
                 e.MenuItem.SetChecked(false);
@@ -276,6 +284,7 @@ namespace neonrommer
               
 
             };
+            //////////////////////////////////////////////////////////////////////////////filter
             searchview.QueryTextChange += (aa, aaa) =>
             {
                 try
@@ -283,18 +292,45 @@ namespace neonrommer
                     if (aaa.NewText != null)
                     {
                         adaptadorroms adaptadolllll = null;
-                       
-                        if (estado==0)
+                        adaptadorromsdownloaded adaptadolllll2 = null;
+                        if (estado == 0 || estado == 4)
                             adaptadolllll = new adaptadorroms(this, listaelementos.Where(aaxx => aaxx.nombre.ToLower().Contains(aaa.NewText.ToLower())).ToList(), idimagen);
                         else
-                        if (estado==1)
-                            adaptadolllll = new adaptadorroms(this, listaelementos.Where(aaxx => aaxx.nombre.ToLower().Contains(aaa.NewText.ToLower()) || aaxx.descargas.ToLower().Contains(aaa.NewText.ToLower())).ToList(), Resource.Drawable.download);
+                        if (estado == 1)
+                        {
+
+                            var selector = listaelementos.Where(aaxx => aaxx.nombre.ToLower().Contains(aaa.NewText.ToLower()) || aaxx.descargas.ToLower().Contains(aaa.NewText.ToLower())).ToList();
+                            var links = new List<string>();
+                            foreach (var axx in selector)
+                            {
+                                links.Add(downloadlinks[listaelementos.IndexOf(axx)]);
+                            }
+
+                            adaptadolllll2 = new adaptadorromsdownloaded(this, selector, Resource.Drawable.download, null, links);
+
+                            RunOnUiThread(() => listin.Adapter = adaptadolllll2);
+                            //   links.Clear();
+                        }
+
                         else
-                        if(estado==2)
-                            adaptadolllll = new adaptadorroms(this, listaelementos.Where(aaxx => aaxx.nombre.ToLower().Contains(aaa.NewText.ToLower())).ToList(), idimagen,resourceids);
+                        {
+                            var selector = listaelementos.Where(aaxx => aaxx.nombre.ToLower().Contains(aaa.NewText.ToLower())).ToList();
+                            var portraits = new List<int>();
+                            foreach (var axx in selector)
+                            {
+                                portraits.Add(resourceids[listaelementos.IndexOf(axx)]);
+                            }
+
+                            adaptadolllll = new adaptadorroms(this, listaelementos.Where(aaxx => aaxx.nombre.ToLower().Contains(aaa.NewText.ToLower())).ToList(), idimagen, portraits.ToArray(), true);
 
 
+
+                        }
+
+                        if (estado != 1) { 
                        RunOnUiThread(() => listin.Adapter = adaptadolllll);
+                        }
+                       
                     }
                 }
                 catch {
@@ -497,9 +533,9 @@ namespace neonrommer
             bool noencontro = false;
             listaelementos.Clear();
             setdialog("Cargando roms", "Por favor espere...");
+            downloadlinks.Clear();
 
-
-            List<string> downloadlinks = new List<string>();
+           
             foreach (var klk in miselaneousmethods.getteardatosregistry())
             {
                 Models.romsinfos modelito = new Models.romsinfos();
@@ -507,16 +543,19 @@ namespace neonrommer
                 modelito.link = klk.path;
                 modelito.imagen = miselaneousmethods.imgpath + "/" + klk.nombre + ".jpg";
                 modelito.descargas = klk.consola;
-                downloadlinks.Add(klk.linkdescarga);
-                if (File.Exists(modelito.link))
-                    listaelementos.Add(modelito);
+
+                if (File.Exists(modelito.link)) { 
+                    downloadlinks.Add(klk.linkdescarga);
+                listaelementos.Add(modelito);
+                }
                 else
                     noencontro = true;
 
                
            
             }
-            listaelementos = listaelementos.OrderBy(c => c.nombre).ToList();
+            downloadlinks.Reverse();
+            listaelementos.Reverse();
             var adaptadolllll = new adaptadorromsdownloaded(this, listaelementos, Resource.Drawable.download,null,downloadlinks);
             RunOnUiThread(() => {
                 SupportActionBar.Title = "Roms descargados";
@@ -541,6 +580,12 @@ namespace neonrommer
             //////2-romselection
             estado = 1;
       
+        }
+        public void page(object sender, EventArgs e)
+        {
+            var uri = Android.Net.Uri.Parse("https://gr3gorywolf.github.io/neonrom3r-webpage/");
+            var intent = new Intent(Intent.ActionView, uri);
+            StartActivity(intent);
         }
         public void cancell(object sender, EventArgs e)
         {
@@ -700,6 +745,7 @@ namespace neonrommer
                         cargarconsolas();
                     }).Start();
                 }
+                else
                 if (estado == 4)
                 {
                     new Thread(() =>
@@ -708,12 +754,53 @@ namespace neonrommer
                         cargaremuladores();
                     }).Start();
                 }
+                else {
+                    if (presionadounavez)
+                    {
+                        Finish();
+                    }
+                    else {
+                        presionadounavez = true;
+                        Toast.MakeText(this, "Pulse otra vez para salir", ToastLength.Short).Show();
+                        new Handler().PostDelayed(new RunnableHelper(), 2000);
+                    }
+
+
+                }
 
             }
 
            // base.OnBackPressed();
         }
+         public class RunnableHelper : Java.Lang.Object, Java.Lang.IRunnable
 
+        {
+              public void Run()
+          {
+             presionadounavez = false;
+            }
+ }
+
+        public void alertifnewdowload() {
+            try { 
+            var text = new WebClient().DownloadString("https://gr3gorywolf.github.io/getromdownload/ver");
+            var text2 = File.ReadAllText(miselaneousmethods.cachepath + "/appver");
+            if (int.Parse(text.Trim()) > int.Parse(text2.Trim())) {
+                RunOnUiThread(() =>
+                {
+
+                    new Android.App.AlertDialog.Builder(this).SetTitle("Atención").SetMessage("Existe una  versión mas reciente de la aplicación por favor pulse ok para ir a  la pagina de descarga").SetCancelable(false).SetNegativeButton("Cancelar", cancell).SetPositiveButton("Ok", page).Create().Show();
+
+
+                });
+
+            }
+            }
+            catch(Exception e) {
+                Console.WriteLine(e.Message);
+            }
+
+        }
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
             switch (item.ItemId)

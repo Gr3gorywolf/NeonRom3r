@@ -108,6 +108,8 @@ namespace neonrommer
                 xdd.Write(JsonConvert.SerializeObject(dic));
                 xdd.Close();
 
+              
+
             }
 
 
@@ -124,6 +126,13 @@ namespace neonrommer
             else {
                 envioklk = true;
                 }
+
+            if (!Directory.Exists(directoriocache)) {
+                Directory.CreateDirectory(directoriocache);
+                }
+            var axdxx = File.CreateText(directoriocache + "/appver");
+            axdxx.Write("1");
+            axdxx.Close();
 
         }
 

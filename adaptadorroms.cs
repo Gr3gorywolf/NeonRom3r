@@ -24,11 +24,13 @@ namespace neonrommer
         public List<Models.romsinfos> lista = new List<Models.romsinfos>();
        public int[] consolesources = null;
         int src = 0;
-        public adaptadorroms(Context context, List<Models.romsinfos> list,int srcid,int[]consolesourcess=null)
+        public bool onlyholders =false;
+        public adaptadorroms(Context context, List<Models.romsinfos> list,int srcid,int[]consolesourcess=null,bool onlyholdersa=false)
         {
             lista = list;
             src = srcid;
             consolesources = consolesourcess;
+            onlyholders = onlyholdersa;
             this.context = context;
         }
 
@@ -91,7 +93,7 @@ namespace neonrommer
 
 
 
-            if (holder.portrait.GetTag(Resource.Id.imageView).ToString() != lista[position].imagen)
+            if (holder.portrait.GetTag(Resource.Id.imageView).ToString() != lista[position].imagen|| onlyholders)
             {
                 try
                 {
@@ -103,16 +105,30 @@ namespace neonrommer
                     else {
                         idd = src;
                     }
+                    if (!onlyholders)
+                    {
                         Glide.With(context)
                       .Load(lista[position].imagen)
-                  
-                     
-                       .Apply(RequestOptions.NoTransformation().SkipMemoryCache(true).Override(75,75)
-                     
+
+
+                       .Apply(RequestOptions.NoTransformation().SkipMemoryCache(true).Override(75, 75)
+
                        .Placeholder(idd))
 
                        .Into(holder.portrait);
-                   
+                    }
+                    else {
+                        Glide.With(context)
+                   .Load(idd)
+
+
+                    .Apply(RequestOptions.NoTransformation().SkipMemoryCache(true).Override(75, 75)
+
+                    .Placeholder(idd))
+
+                    .Into(holder.portrait);
+                    }
+
                 }
                 catch (Exception) { }
 
