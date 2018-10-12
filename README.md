@@ -32,7 +32,7 @@
 <br>You can download the 
 signed apk directly from this <a href='https://gr3gorywolf.github.io/NeonRom3r/GR3apps.neonrom3r.apk'>Link</a>
 <br>
-know more on the aplication<a href='https://gr3gorywolf.github.io/neonrom3r-webpage/'>official website</a>
+know more on the aplication on the aplication´s <a href='https://gr3gorywolf.github.io/neonrom3r-webpage/'>official website</a>
 <br>
 <br>
 <br>
