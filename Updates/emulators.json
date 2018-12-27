@@ -142,5 +142,14 @@
             "link": "https://play.google.com/store/apps/details?id=com.reicast.emulator",
             "compactible": "No compatible"
         }
+    ],
+    "NDS": [
+        {
+            "nombre": "DraStic Español",
+            "imagen": "https://lh3.googleusercontent.com/fyOy1bFOen89oWzXImJYNJYce1des9y_jYohNt_WOVFpQbJ7ReSL7hCea2xPTVyf7gd9=s180-rw",
+            "link": "https://github.com/Gr3gorywolf/getromdownload/raw/master/Drastic.apk",
+            "compactible": "Compatible"
+        }
     ]
+    
 }
