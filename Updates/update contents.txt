@@ -1,0 +1,7 @@
+Contents of update.zip
+-Updates
+      -emulators.json
+      -version.gr3v
+-Rominfos
+      -Data * from here
+         
