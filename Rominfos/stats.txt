@@ -7,19 +7,15 @@ Obteniendo datos de:GBA
 1916 Portadas encontradas de 2810   894Portadas no encotradas
 50%
 1916 Portadas encontradas de 2809   893Portadas no encotradas
- 100%
-Obteniendo datos de:GBC
-430 Portadas encontradas de 529   99Portadas no encotradas
-50%
 Obteniendo datos de:GB
-478 Portadas encontradas de 621   143Portadas no encotradas
+502 Portadas encontradas de 621   119Portadas no encotradas
 50%
-478 Portadas encontradas de 620   142Portadas no encotradas
+502 Portadas encontradas de 620   118Portadas no encotradas
  100%
 Obteniendo datos de:GBA
-1891 Portadas encontradas de 2810   919Portadas no encotradas
+1454 Portadas encontradas de 2810   1356Portadas no encotradas
 50%
-1891 Portadas encontradas de 2809   918Portadas no encotradas
+1454 Portadas encontradas de 2809   1355Portadas no encotradas
  100%
 Obteniendo datos de:GBC
 425 Portadas encontradas de 529   104Portadas no encotradas
@@ -47,7 +43,7 @@ Obteniendo datos de:PSX
 492 Portadas encontradas de 1720   1228Portadas no encotradas
  100%
 Obteniendo datos de:NDS
-4013 Portadas encontradas de 6573   2560Portadas no encotradas
+4012 Portadas encontradas de 6573   2561Portadas no encotradas
 50%
 4012 Portadas encontradas de 6572   2560Portadas no encotradas
  100%

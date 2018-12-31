@@ -1,7 +1,7 @@
 {
     "GBA": [
         {
-            "nombre": "\t\r\nMy Boy! Free - GBA Emulator",
+            "nombre": "My Boy! Free - GBA Emulator",
             "imagen": "https://lh3.ggpht.com/WUe6xG1SKSE28VRjJrzjWJW4NjkjBrGyLMjL6e-8DUctRFe1WPrBGIqHTV7WUydXOGU=s180-rw",
             "link": "https://play.google.com/store/apps/details?id=com.fastemulator.gbafree",
             "compactible": "Compatible"
@@ -126,21 +126,21 @@
             "nombre": "FPse para Android",
             "imagen": "https://lh3.ggpht.com/3eer_Q6vG2boAwNPEC2JDL433MHEFCLO2pCXPonNI-oOocxVjceN93lOp_PW6ohvfF0=s180-rw",
             "link": "https://play.google.com/store/apps/details?id=com.emulator.fpse",
-            "compactible": "No compatible"
+            "compactible": "Compatible"
         },
         {
             "nombre": "ClassicBoy (Emulator)",
             "imagen": "https://lh3.ggpht.com/3CMkT48MFzkbjXLaTLEvV_9ftWGDEHNtUWgydg8N1uG4yN8a_0gmmg3uSDx--AzEWw=s180-rw",
             "link": "https://play.google.com/store/apps/details?id=com.portableandroid.classicboyLite",
-            "compactible": "No compatible"
+            "compactible": "Compatible"
         }
     ],
     "Dreamcast": [
         {
-            "nombre": "Reicast - Dreamcast emulator",
+            "nombre": "Reicast - Dreamcast emulator(Necesita instalar bios luego de instalacion)",
             "imagen": "https://lh3.googleusercontent.com/UZHin6Iango72jl3OvdKjPZ5yKDK1qgdKdfgwz2qnkFXu97ju_Stq0zYrNKx8kIQ86c=s180-rw",
             "link": "https://play.google.com/store/apps/details?id=com.reicast.emulator",
-            "compactible": "No compatible"
+            "compactible": "Compatible"
         }
     ],
     "NDS": [
