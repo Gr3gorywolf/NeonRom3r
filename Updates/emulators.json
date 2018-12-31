@@ -9,7 +9,7 @@
         {
             "nombre": "My Boy! - GBA Emulator",
             "imagen": "https://lh3.ggpht.com/7BAl299O4VckTmuDzghLoPN8lAMjNO1vFYAypOGtq0RcM6sS_EOr5jM4ScIB-o1uiw=s180-rw",
-            "link": "https://github.com/Gr3gorywolf/getromdownload/raw/master/Myboy.apk",
+            "link": "https://gr3gorywolf.github.io/getromdownload/Myboy.html",
             "compactible": "Compatible"
         },
         {
@@ -77,7 +77,7 @@
         {
             "nombre": "My OldBoy! - GBC Emulator",
             "imagen": "https://lh3.ggpht.com/WAb2O-e1URsGhW7E_BosgxOLybnXJf-k84243MfzTul5VWyRF-diuzC-nhjrQAEkMs0=s180-rw",
-            "link": "https://github.com/Gr3gorywolf/getromdownload/raw/master/Myoldboy.apk",
+            "link": "https://gr3gorywolf.github.io/getromdownload/Myoldboy.html",
             "compactible": "Compatible"
         },
         {
@@ -105,7 +105,7 @@
         {
             "nombre": "My OldBoy! - GBC Emulator",
             "imagen": "https://lh3.ggpht.com/WAb2O-e1URsGhW7E_BosgxOLybnXJf-k84243MfzTul5VWyRF-diuzC-nhjrQAEkMs0=s180-rw",
-            "link": "https://github.com/Gr3gorywolf/getromdownload/raw/master/Myoldboy.apk",
+            "link": "https://gr3gorywolf.github.io/getromdownload/Myoldboy.html",
             "compactible": "Compatible"
         },
         {
@@ -119,13 +119,13 @@
         {
             "nombre": "ePSXe for Android",
             "imagen": "https://lh3.ggpht.com/xm13cRUNfN917GRFZql6MrtL9gDYvvoj1kINpZyFNadRAGbDmrK8gB5V-PvuhtvBmA=s180-rw",
-            "link": "https://github.com/Gr3gorywolf/getromdownload/raw/master/epsxe.apk",
+            "link": "https://gr3gorywolf.github.io/getromdownload/epsxe.html",
             "compactible": "No compatible"
         },
         {
             "nombre": "FPse para Android",
             "imagen": "https://lh3.ggpht.com/3eer_Q6vG2boAwNPEC2JDL433MHEFCLO2pCXPonNI-oOocxVjceN93lOp_PW6ohvfF0=s180-rw",
-            "link": "https://github.com/Gr3gorywolf/getromdownload/raw/master/fpse.apk",
+            "link": "https://gr3gorywolf.github.io/getromdownload/fpse.html",
             "compactible": "Compatible"
         },
         {
@@ -147,7 +147,7 @@
         {
             "nombre": "DraStic Español",
             "imagen": "https://lh3.googleusercontent.com/fyOy1bFOen89oWzXImJYNJYce1des9y_jYohNt_WOVFpQbJ7ReSL7hCea2xPTVyf7gd9=s180-rw",
-            "link": "https://github.com/Gr3gorywolf/getromdownload/raw/master/Drastic.apk",
+            "link": "https://gr3gorywolf.github.io/getromdownload/Drastic.html",
             "compactible": "Compatible"
         }
     ]
