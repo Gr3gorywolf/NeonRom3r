@@ -9,7 +9,7 @@
         {
             "nombre": "My Boy! - GBA Emulator",
             "imagen": "https://lh3.ggpht.com/7BAl299O4VckTmuDzghLoPN8lAMjNO1vFYAypOGtq0RcM6sS_EOr5jM4ScIB-o1uiw=s180-rw",
-            "link": "https://play.google.com/store/apps/details?id=com.fastemulator.gba",
+            "link": "https://github.com/Gr3gorywolf/getromdownload/raw/master/Myboy.apk",
             "compactible": "Compatible"
         },
         {
@@ -77,7 +77,7 @@
         {
             "nombre": "My OldBoy! - GBC Emulator",
             "imagen": "https://lh3.ggpht.com/WAb2O-e1URsGhW7E_BosgxOLybnXJf-k84243MfzTul5VWyRF-diuzC-nhjrQAEkMs0=s180-rw",
-            "link": "https://play.google.com/store/apps/details?id=com.fastemulator.gbc",
+            "link": "https://github.com/Gr3gorywolf/getromdownload/raw/master/Myoldboy.apk",
             "compactible": "Compatible"
         },
         {
@@ -105,7 +105,7 @@
         {
             "nombre": "My OldBoy! - GBC Emulator",
             "imagen": "https://lh3.ggpht.com/WAb2O-e1URsGhW7E_BosgxOLybnXJf-k84243MfzTul5VWyRF-diuzC-nhjrQAEkMs0=s180-rw",
-            "link": "https://play.google.com/store/apps/details?id=com.fastemulator.gbc",
+            "link": "https://github.com/Gr3gorywolf/getromdownload/raw/master/Myoldboy.apk",
             "compactible": "Compatible"
         },
         {
@@ -119,13 +119,13 @@
         {
             "nombre": "ePSXe for Android",
             "imagen": "https://lh3.ggpht.com/xm13cRUNfN917GRFZql6MrtL9gDYvvoj1kINpZyFNadRAGbDmrK8gB5V-PvuhtvBmA=s180-rw",
-            "link": "https://play.google.com/store/apps/details?id=com.epsxe.ePSXe",
+            "link": "https://github.com/Gr3gorywolf/getromdownload/raw/master/epsxe.apk",
             "compactible": "No compatible"
         },
         {
             "nombre": "FPse para Android",
             "imagen": "https://lh3.ggpht.com/3eer_Q6vG2boAwNPEC2JDL433MHEFCLO2pCXPonNI-oOocxVjceN93lOp_PW6ohvfF0=s180-rw",
-            "link": "https://play.google.com/store/apps/details?id=com.emulator.fpse",
+            "link": "https://github.com/Gr3gorywolf/getromdownload/raw/master/fpse.apk",
             "compactible": "Compatible"
         },
         {
