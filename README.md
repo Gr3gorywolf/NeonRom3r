@@ -26,6 +26,14 @@
 <br><p align="center"><img height="460" width="300" src='https://gr3gorywolf.github.io/NeonRom3r/direcdownloading.jpeg' style='margin-left:25%'/></p>
 <br>
 <br>
+<br><h3>Open roms from the app :</h3><br>Every rom that was downloaded from app is archived and you can open it if you have installed an compatible emulator. Some roms like the ps1,nds etc needs to be uncompressed in those cases neonrom3r will unco<br>
+<br><p align="center"><img height="460" width="300" src='https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/juegosD.jpeg' style='margin-left:25%'/></p>
+<br>
+<br>
+<br><h3>Download the necesary consoles from the app :</h3><br>The app includes an little but quality emulators that needs to be instaled at least one of the console to open roms from that console from the app<br>
+<br><p align="center"><img height="460" width="300" src='https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/ConsolasD.jpeg' style='margin-left:25%'/></p>
+<br>
+<br>
 <br>
 <br>
 <br>
