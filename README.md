@@ -30,7 +30,7 @@
 <br><p align="center"><img height="460" width="300" src='https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/juegosD.jpeg' style='margin-left:25%'/></p>
 <br>
 <br>
-<br><h3>Download the necesary consoles from the app :</h3><br>The app includes an little but quality emulators that needs to be instaled at least one of the console to open roms from that console from the app<br>
+<br><h3>Download the emulator from the app :</h3><br>The app includes an little but quality emulators that needs to be instaled at least one of the console to open roms from that console from the app<br>
 <br><p align="center"><img height="460" width="300" src='https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/ConsolasD.jpeg' style='margin-left:25%'/></p>
 <br>
 <br>
