@@ -5,6 +5,11 @@
 <h1> this app have the following features:</h1>
 <br>
 <br>
+<br><h3>Autoupdateble :</h3><br>Because the info of neonrom3r is json based is pretty easy to send that updated data to every user who owns the app for that reason I implemented an autoupdater called RocketUpdater that download an zipped file that contains the updated data when is necesary from <a href="https://github.com/Gr3gorywolf/NeonRom3r/tree/master/Updates">Here</a><br>
+<br><p align="center"><img height="460" width="300" src='https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/juegosD.jpeg' style='margin-left:25%'/></p>
+<br>
+<br>
+<br>
 <br>
 <br><h3>Multiple console sections:</h3><br>This app have arround 10 console roms sections that have each arround 200~8000 roms and the roms info are downloaded from <a href='https://github.com/Gr3gorywolf/NeonRom3r/tree/master/Rominfos'>Here</a> that contains JSON files that contains the scraped information from The-eye.eu that was previously scraped using  <a href='https://github.com/Gr3gorywolf/Neonrom3r-rom-infos-scraper'>Neonrom3r-rom-infos-scraper</a> 
 <br>
@@ -26,7 +31,7 @@
 <br><p align="center"><img height="460" width="300" src='https://gr3gorywolf.github.io/NeonRom3r/direcdownloading.jpeg' style='margin-left:25%'/></p>
 <br>
 <br>
-<br><h3>Open roms from the app :</h3><br>Every rom that was downloaded from app is archived and you can open it if you have installed an compatible emulator. Some roms like the ps1,nds etc needs to be uncompressed in those cases neonrom3r will unco<br>
+<br><h3>Open roms from the app :</h3><br>Every rom that was downloaded from app is archived and you can open it if you have installed an compatible emulator. Some roms like the ps1,nds etc needs to be uncompressed in those cases neonrom3r will uncompress those roms for you<br>
 <br><p align="center"><img height="460" width="300" src='https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/juegosD.jpeg' style='margin-left:25%'/></p>
 <br>
 <br>
