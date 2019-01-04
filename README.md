@@ -5,8 +5,8 @@
 <h1> this app have the following features:</h1>
 <br>
 <br>
-<br><h3>Autoupdateble :</h3><br>Because the info of neonrom3r is json based is pretty easy to send that updated data to every user who owns the app for that reason I implemented an autoupdater called RocketUpdater that download an zipped file that contains the updated data when is necesary from <a href="https://github.com/Gr3gorywolf/NeonRom3r/tree/master/Updates">Here</a><br>
-<br><p align="center"><img height="460" width="300" src='https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/juegosD.jpeg' style='margin-left:25%'/></p>
+<br><h3>Selfupdateble :</h3><br>Because the info of neonrom3r is json based is pretty easy to send that updated data to every user who owns the app for that reason I implemented an autoupdater called RocketUpdater that download an zipped file that contains the updated data when is necesary from <a href="https://github.com/Gr3gorywolf/NeonRom3r/tree/master/Updates">Here</a><br>
+<br>
 <br>
 <br>
 <br>
