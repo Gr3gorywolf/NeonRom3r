@@ -11,7 +11,7 @@
 <br>
 <br>
 <br>
-<br><h3>Multiple console sections:</h3><br>This app have arround 10 console roms sections that have each arround 200~8000 roms and the roms info are downloaded from <a href='https://github.com/Gr3gorywolf/NeonRom3r/tree/master/Rominfos'>Here</a> that contains JSON files that contains the scraped information from The-eye.eu that was previously scraped using  <a href='https://github.com/Gr3gorywolf/Neonrom3r-rom-infos-scraper'>Neonrom3r-rom-infos-scraper</a> 
+<br><h3>Multiple console sections:</h3><br>This app have arround 10 console roms sections that have each arround 200~8000 roms and the roms infos are downloaded from <a href='https://github.com/Gr3gorywolf/NeonRom3r/tree/master/Rominfos'>Here</a> that contains JSON files with the scraped information from The-eye.eu that was previously scraped using  <a href='https://github.com/Gr3gorywolf/Neonrom3r-rom-infos-scraper'>Neonrom3r-rom-infos-scraper</a> 
 <br>
 <br>
 <br><p align="center"><img  height="460" width="300" src='https://gr3gorywolf.github.io/NeonRom3r/sidemenu.jpeg' style='margin-left:25%'/></p><br>
