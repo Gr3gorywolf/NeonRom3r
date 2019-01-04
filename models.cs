@@ -16,22 +16,20 @@ namespace neonrommer
     {
         public class romsinfos
         {
-            public string nombre { get; set; }
-            public string imagen { get; set; }
-            public string descargas { get; set; }
-            public string link { get; set; }
+            public string Name { get; set; }
+            public string Portrait { get; set; }
+            public string Region { get; set; }
+            public string InfoLink { get; set; }
         };
         public class rominfo
         {
-            public string id { get; set; }
-            public string nombre { get; set; }
-            public string imagen { get; set; }
-            public string descargas { get; set; }
-            public string linkdescarga { get; set; }
-            public string consola { get; set; }
-            public string region { get; set; }
-            public string votos { get; set; }
-            public string size { get; set; }
+         
+            public string Name { get; set; }
+            public string Portrait { get; set; }           
+            public string DownloadLink { get; set; }
+            public string Console { get; set; }
+            public string Region { get; set; }
+            public string Size { get; set; }
 
         }
 

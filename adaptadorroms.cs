@@ -78,10 +78,10 @@ namespace neonrommer
                 }
 
                 Glide.With(context)
-                .Load(lista[position].imagen)
+                .Load(lista[position].Portrait)
                 .Apply(RequestOptions.NoTransformation().SkipMemoryCache(true).Override(75, 75).Placeholder(idd))
                 .Into(holder.portrait);
-                holder.portrait.SetTag(Resource.Id.imageView, lista[position].imagen);
+                holder.portrait.SetTag(Resource.Id.imageView, lista[position].Portrait);
                 view.Tag = holder;
                
             }
@@ -93,7 +93,7 @@ namespace neonrommer
 
 
 
-            if (holder.portrait.GetTag(Resource.Id.imageView).ToString() != lista[position].imagen|| onlyholders)
+            if (holder.portrait.GetTag(Resource.Id.imageView).ToString() != lista[position].Portrait|| onlyholders)
             {
                 try
                 {
@@ -108,7 +108,7 @@ namespace neonrommer
                     if (!onlyholders)
                     {
                         Glide.With(context)
-                      .Load(lista[position].imagen)
+                      .Load(lista[position].Portrait)
 
 
                        .Apply(RequestOptions.NoTransformation().SkipMemoryCache(true).Override(75, 75)
@@ -139,9 +139,9 @@ namespace neonrommer
 
             //fill in your items
             //holder.Title.Text = "new text here";
-            holder.Title.Text = lista[position].nombre;
-            holder.Title2.Text = lista[position].descargas;
-            holder.portrait.SetTag(Resource.Id.imageView, lista[position].imagen);
+            holder.Title.Text = lista[position].Name;
+            holder.Title2.Text = lista[position].Region;
+            holder.portrait.SetTag(Resource.Id.imageView, lista[position].Portrait);
            
             return view;
 

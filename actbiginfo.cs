@@ -8,13 +8,15 @@ using Android.OS;
 using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
-using emulatorgamessuperscrapper;
+
 using System.IO;
 using static Android.Icu.Text.DateFormat;
 using System.Net;
 using System.Linq;
 using System.Collections.Generic;
 using Newtonsoft.Json;
+using System;
+
 namespace neonrommer
 {
     [Activity(Label = "NeonRommer", Theme = "@style/Theme.DesignDemo", ConfigurationChanges = Android.Content.PM.ConfigChanges.Orientation | Android.Content.PM.ConfigChanges.ScreenSize)]
@@ -38,7 +40,8 @@ namespace neonrommer
         public ProgressDialog dialogoprogreso;
 #pragma warning restore CS0618 // El tipo o el miembro están obsoletos
       public static  actbiginfo contexto;
-        public static string[] consolelistformal = { "Gameboy", "Gameboy Color", "Gameboy Advance", "Nintendo", "Super Nintendo", "Nintendo 64", "Playstation", "SEGA Genesis", "Dreamcast" };
+        public string downloadlink = "";
+        public string[] consolelistformal = { "Gameboy", "Gameboy Color", "Gameboy Advance", "Nintendo", "Super Nintendo", "Nintendo 64", "Playstation", "Sega Genesis", "Sega Dreamcast", "Nintendo DS" };
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -118,7 +121,7 @@ namespace neonrommer
                 dialogoprogreso.Show();
             });
 
-            var link = new superscraper().getdownloadlink(romid).Result;
+            var link = downloadlink;
           RunOnUiThread(()=> {
               dialogoprogreso.Dismiss();
            //   var imagenuri = Android.Net.Uri.Parse(imagen);
@@ -148,36 +151,39 @@ namespace neonrommer
                 dialogoprogreso.SetMessage("Por favor espere");
                 dialogoprogreso.Show();
             });
-            var ruta = dicciopath[miselaneousmethods.consolelist[consolelistformal.ToList().IndexOf(consola.Text)]];
+
+
+            var ruta = dicciopath[miselaneousmethods.consolelist[Intent.GetIntExtra("consoleindex",0)]];
             if (!Directory.Exists(miselaneousmethods.cachepath))
                 Directory.CreateDirectory(miselaneousmethods.cachepath);
-            var link = new superscraper().getdownloadlink(romid).Result;
+            var link = downloadlink;
             var manige = DownloadManager.FromContext(this);
             var requ = new DownloadManager.Request(Android.Net.Uri.Parse(link.Replace(" ","%20")));
             requ.SetDescription("Espere por favor");
             requ.SetNotificationVisibility(DownloadVisibility.VisibleNotifyCompleted);
             requ.SetTitle(nombre);
-            Android.Net.Uri destino = null;
-            if (consola.Text.ToLower()!="playstation")
-              destino=Android.Net.Uri.FromFile(new Java.IO.File(ruta + "/" + nombre + ".zip"));
-            else
-                destino = Android.Net.Uri.FromFile(new Java.IO.File(ruta + "/" + nombre + ".7z"));
+            Android.Net.Uri destino =
+                Android.Net.Uri.FromFile(new Java.IO.File(ruta + "/" +Path.GetFileName( System.Net.WebUtility.UrlDecode(downloadlink).Replace(" ",""))));          
             requ.SetDestinationUri(destino);
             requ.SetVisibleInDownloadsUi(true);
             manige.Enqueue(requ);
             dialogoprogreso.Dismiss();
             RunOnUiThread(() => Toast.MakeText(this, "Descarga iniciada!!", ToastLength.Long).Show());
-            miselaneousmethods.guardarenregistry(nombre, destino.Path, imagen, consola.Text,link.Replace(" ", "%20"));
+            miselaneousmethods.guardarenregistry(nombre, destino.Path, imagen, miselaneousmethods.consolelistformal[Intent.GetIntExtra("consoleindex", 0)], link.Replace(" ", "%20"));
           //  miselaneousmethods.guardarenregistrydescargas(nombre, destino.Path, imagen, consola.Text, link.Replace(" ", "%20"));
             new Thread(() =>
             {
+                try
+                {
+                    using (WebClient cliente = new WebClient())
+                    {
 
-                using (WebClient cliente = new WebClient()) {
-
-                    if (!Directory.Exists(miselaneousmethods.imgpath))
-                        Directory.CreateDirectory(miselaneousmethods.imgpath);
-                    cliente.DownloadFile(imagen, miselaneousmethods.imgpath + "/" + nombre + ".jpg");
+                        if (!Directory.Exists(miselaneousmethods.imgpath))
+                            Directory.CreateDirectory(miselaneousmethods.imgpath);
+                        cliente.DownloadFile(imagen, miselaneousmethods.imgpath + "/" + nombre + ".jpg");
+                    }
                 }
+                catch (Exception) { }
             }).Start();
 
     
@@ -197,37 +203,44 @@ namespace neonrommer
                 dialogoprogreso.SetMessage("Por favor espere");
                 dialogoprogreso.Show();
             });
-            dicciopath = JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText(miselaneousmethods.cachepath + "/paths.json"));
-            superscraper escrapeador = new superscraper();
-            var objeto =escrapeador.getrominfo(linkinfo).Result;
-            romid = objeto.id;
-            nombre = objeto.nombre;
-            imagen = objeto.imagen;
-            RunOnUiThread(() =>
+            try
             {
-                consolaa = objeto.consola;
-                consola.Text = objeto.consola;
-                if (objeto.votos.Contains("5")) {
-                    estrella.Text = objeto.votos;
-                }
-                else {
-                    estrella.Text = "0 De 5";
-                }
-                
-                region.Text = objeto.region;
-                descargas.Text = objeto.descargas;
-                size.Text = objeto.size;
-                titulo.Text = objeto.nombre;
-                titulo.Selected = true;
-               
-                Glide.With(this)
-                .Load(objeto.imagen)
-                 .Apply(RequestOptions.NoTransformation().Placeholder(Intent.GetIntExtra("placeholder",0)))
-                 .Into(portada);
-                dialogoprogreso.Dismiss();
-            });
-           
-            
+                dicciopath = JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText(miselaneousmethods.cachepath + "/paths.json"));
+         
+                var objeto = JsonConvert.DeserializeObject<Models.rominfo>(new WebClient().DownloadString(linkinfo));
+                downloadlink = objeto.DownloadLink;
+                nombre = objeto.Name;
+                imagen = objeto.Portrait;
+                RunOnUiThread(() =>
+                {
+                    consolaa = objeto.Console;
+                    consola.Text = objeto.Console;
+
+
+                    region.Text = objeto.Region;
+
+                    size.Text = objeto.Size;
+                    titulo.Text = objeto.Name;
+                    titulo.Selected = true;
+
+                    Glide.With(this)
+                    .Load(objeto.Portrait)
+                     .Apply(RequestOptions.NoTransformation().Placeholder(Intent.GetIntExtra("placeholder", 0)))
+                     .Into(portada);
+                    dialogoprogreso.Dismiss();
+                });
+            }
+            catch (Exception) {
+
+                RunOnUiThread(() =>
+                {
+
+                    dialogoprogreso.Dismiss();
+                    Toast.MakeText(this, "Error al cargar este rom", ToastLength.Long).Show() ;
+                });
+            }
+
+
 
         }
         protected override void OnDestroy()

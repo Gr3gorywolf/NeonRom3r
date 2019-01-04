@@ -80,7 +80,7 @@ namespace neonrommer
           
                 string datastr = JsonConvert.SerializeObject(datos);
 
-                var firebase = new FirebaseClient("<your firebase url>");
+                var firebase = new FirebaseClient("<Your firebase proyect url>");
 
 
                 await firebase.Child("Sugerencias/"+ miselaneousmethods.getrandomserial()).PutAsync(datastr);

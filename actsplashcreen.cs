@@ -20,8 +20,9 @@ namespace neonrommer
     public class actsplashcreen : Activity
     {
         ImageView logo;
+        TextView estado;
         string verstring = "";
-        int  segs = 0;
+       
         bool envioklk = false;
         string directoriocache = Android.OS.Environment.ExternalStorageDirectory + "/.romercache";
         // bool terminada = false;
@@ -35,16 +36,22 @@ namespace neonrommer
           
 
             logo = FindViewById<ImageView>(Resource.Id.portada2);
-
+            estado = FindViewById<TextView>(Resource.Id.estado);
+          var  gitinfo = FindViewById<TextView>(Resource.Id.githubinfo);
+            miselaneousmethods.ponerfuente2(this.Assets, estado);
+            miselaneousmethods.ponerfuente2(this.Assets, gitinfo);
             animar3(logo);
-
+          
             new Thread(() =>
             {
+                RunOnUiThread(() => estado.Text = "Conectandose al servidor...");
                 if (CheckInternetConnection())
                 {
-                    List<string> arraydatos = new List<string>();
-                    arraydatos.Add(Android.Manifest.Permission.ReadExternalStorage);
-                    arraydatos.Add(Android.Manifest.Permission.WriteExternalStorage);
+                    List<string> arraydatos = new List<string>
+                    {
+                        Android.Manifest.Permission.ReadExternalStorage,
+                        Android.Manifest.Permission.WriteExternalStorage
+                    };
                     if (Build.VERSION.SdkInt >= BuildVersionCodes.M)
                     {
                         RunOnUiThread(() =>
@@ -54,12 +61,12 @@ namespace neonrommer
                     }
                     else
                     {
-                        enviarvainilla();
+                     
+                        Enviarreporte();
                     }
 
+                 
 
-                    verstring = new WebClient().DownloadString("https://gr3gorywolf.github.io/getromdownload/version.gr3v");
-                    new Thread(() => { poner(); }).Start();
 
                 }
                 else
@@ -67,9 +74,9 @@ namespace neonrommer
                     RunOnUiThread(() =>
                     {
                         if (File.Exists(miselaneousmethods.archivoregistro))
-                            new AlertDialog.Builder(this).SetTitle("No se pudo conectar a el servidor").SetMessage("Puede que no haya conexion a internet o los servidores estén en mantenimiento. Usted puede entrar a la app en el modo offline en el cual podrá usar solo ciertas funciones").SetCancelable(false).SetNegativeButton("Cerrar", ok).SetPositiveButton("Abrir en modo offline", off).Create().Show();
+                            new AlertDialog.Builder(this).SetTitle("No se pudo conectar a el servidor").SetMessage("Puede que no haya conexion a internet . Usted puede entrar a la app en el modo offline en el cual podrá usar solo ciertas funciones").SetCancelable(false).SetNegativeButton("Cerrar", ok).SetPositiveButton("Abrir en modo offline", off).Create().Show();
                         else
-                            new AlertDialog.Builder(this).SetTitle("No se pudo conectar a el servidor").SetMessage("Puede que no haya conexion a internet o los servidores estén en mantenimiento. El modo offline se habilitará cuando usted tenga descargado almenos 1 rom").SetCancelable(true).SetPositiveButton("Ok", ok).Create().Show();
+                            new AlertDialog.Builder(this).SetTitle("No se pudo conectar a el servidor").SetMessage("Puede que no haya conexion a internet. El modo offline se habilitará cuando usted tenga descargado almenos 1 rom").SetCancelable(true).SetPositiveButton("Ok", ok).Create().Show();
                     });
                     }
             }).Start();
@@ -89,10 +96,12 @@ namespace neonrommer
             StartActivity(intento);
             this.Finish();
         }
-        public async void enviarvainilla() {
-
+        public async void Enviarreporte() {
+            RunOnUiThread(() => estado.Text = "Verificando archivos...");
             if (!File.Exists(directoriocache + "/paths.json"))
             {
+
+
 
                 Dictionary<string, string> dic = new Dictionary<string, string>();
                 string downloadpath = Path.Combine(Android.OS.Environment.ExternalStorageDirectory.AbsolutePath, Android.OS.Environment.DirectoryDownloads);
@@ -108,17 +117,51 @@ namespace neonrommer
                 xdd.Write(JsonConvert.SerializeObject(dic));
                 xdd.Close();
 
-              
+
+
+            }
+            else {
+                var json = JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText( directoriocache + "/paths.json"));
+                bool tiene = true;
+                foreach (var con in miselaneousmethods.consolelist) {
+                    if (!json.ContainsKey(con)) {
+                        tiene = false;
+                    }
+
+                }
+                if (!tiene) {
+
+                    Dictionary<string, string> dic = new Dictionary<string, string>();
+                    string downloadpath = Path.Combine(Android.OS.Environment.ExternalStorageDirectory.AbsolutePath, Android.OS.Environment.DirectoryDownloads);
+                    foreach (var axd in miselaneousmethods.consolelist)
+                    {
+                        dic.Add(axd, downloadpath);
+
+                    }
+                    if (!Directory.Exists(directoriocache))
+                        Directory.CreateDirectory(directoriocache);
+
+                    var xdd = File.CreateText(directoriocache + "/paths.json");
+                    xdd.Write(JsonConvert.SerializeObject(dic));
+                    xdd.Close();
+                }
+
+
 
             }
 
 
-            if (!File.Exists(directoriocache + "/version.gr3d")) {
-                string teto = "Descargada";
-                var firebase = new FirebaseClient("<your firebase url>");
-            await firebase.Child("Descargas/"+ miselaneousmethods.getrandomserial()).PutAsync(JsonConvert.SerializeObject(teto));
+            if (!File.Exists(directoriocache + "/version.gr3d") && !envioklk) {
+                string teto = "Descargada@" + Android.OS.Build.Model+"@"+System.DateTime.Now;
+                try
+                {
 
-               
+                    var firebase = new FirebaseClient("<Your firebase proyect url>");
+                 await  firebase.Child("Descargas/" + miselaneousmethods.getrandomserial()).PutAsync(JsonConvert.SerializeObject(teto));
+                }
+                catch (Exception) { }
+
+
                 envioklk = true;
 
 
@@ -131,37 +174,39 @@ namespace neonrommer
                 Directory.CreateDirectory(directoriocache);
                 }
             var axdxx = File.CreateText(directoriocache + "/appver");
-            axdxx.Write("1");
+            axdxx.Write("2");
             axdxx.Close();
 
-        }
-
-        public void poner() {
-         
-            while (true) {
-
-                if (verstring != "" && segs>5 && envioklk) {
 
 
-                    RunOnUiThread(() =>
-                    {
+            RunOnUiThread(() => estado.Text = "Buscando actualizaciones...");
+            verstring = new WebClient().DownloadString("https://raw.githubusercontent.com/Gr3gorywolf/NeonRom3r/master/Updates/version.gr3v");
 
 
-                        Intent intento = new Intent(this, typeof(MainActivity));
-                        intento.PutExtra("ver", verstring);
-                        intento.PutExtra("online", true);
-                        StartActivity(intento);
-                        this.Finish();
-                    });
-                    break;
-                }
-                segs++;
-                Thread.Sleep(1000);
+            if (verstring != "" && envioklk)
+            {
+
+
+                RunOnUiThread(() =>
+                {
+
+
+                    Intent intento = new Intent(this, typeof(MainActivity));
+                    intento.PutExtra("ver", verstring);
+                    intento.PutExtra("online", true);
+                    StartActivity(intento);
+                    this.Finish();
+                });
+
             }
 
+
+
+
         }
 
-       
+
+
         private static bool ValidateRemoteCertificate(object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors policyErrors)
         {
             return true;
@@ -188,7 +233,7 @@ namespace neonrommer
         }
         public bool CheckInternetConnection()
         {
-            string CheckUrl = "https://emulator.games/";
+            string CheckUrl = "https://raw.githubusercontent.com/Gr3gorywolf/NeonRom3r/master/Updates/version.gr3v";
 
             try
             {
@@ -214,18 +259,20 @@ namespace neonrommer
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
         {
-
+            bool acepted = true;
             foreach(var permi in grantResults) {
                 if (permi == Permission.Denied)
                 {
+                    acepted = false;
                     new AlertDialog.Builder(this).SetTitle("Error").SetMessage("No se han aceptado los permisos esto podria causar problemas en la aplicacion por favor aceptelos").SetPositiveButton("Ok", ok).Create().Show();
 
                 }
-                else {
-                    enviarvainilla();
-                }
+              
               
                 }
+            if (acepted) { 
+            Enviarreporte();
+            }
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
 

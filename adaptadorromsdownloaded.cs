@@ -110,10 +110,10 @@ namespace neonrommer
                     
                     };
                 Glide.With(context)
-                .Load(lista[position].imagen)
+                .Load(lista[position].Portrait)
                 .Apply(RequestOptions.NoTransformation().SkipMemoryCache(true).Override(75, 75).Placeholder(idd))
                 .Into(holder.portrait);
-                holder.portrait.SetTag(Resource.Id.imageView, lista[position].imagen);
+                holder.portrait.SetTag(Resource.Id.imageView, lista[position].Portrait);
                 view.Tag = holder;
                
             }
@@ -125,7 +125,7 @@ namespace neonrommer
 
 
 
-            if (holder.portrait.GetTag(Resource.Id.imageView).ToString() != lista[position].imagen)
+            if (holder.portrait.GetTag(Resource.Id.imageView).ToString() != lista[position].Portrait)
             {
                 try
                 {
@@ -138,7 +138,7 @@ namespace neonrommer
                         idd = src;
                     }
                         Glide.With(context)
-                      .Load(lista[position].imagen)
+                      .Load(lista[position].Portrait)
                   
                      
                        .Apply(RequestOptions.NoTransformation().SkipMemoryCache(true).Override(75,75)
@@ -157,9 +157,9 @@ namespace neonrommer
 
             //fill in your items
             //holder.Title.Text = "new text here";
-            holder.Title.Text = lista[position].nombre;
-            holder.Title2.Text = lista[position].descargas;
-            holder.portrait.SetTag(Resource.Id.imageView, lista[position].imagen);
+            holder.Title.Text = lista[position].Name;
+            holder.Title2.Text = lista[position].Region;
+            holder.portrait.SetTag(Resource.Id.imageView, lista[position].Portrait);
             holder.menutool.SetTag(Resource.Id.imageView2,position);
             return view;
 
@@ -174,7 +174,7 @@ namespace neonrommer
             builder.DetectFileUriExposure();
             intentsend.SetAction(Intent.ActionSend);
           
-            intentsend.PutExtra(Intent.ExtraStream, Android.Net.Uri.Parse("file://" + lista[pos].link));
+            intentsend.PutExtra(Intent.ExtraStream, Android.Net.Uri.Parse("file://" + lista[pos].InfoLink));
             intentsend.SetType("application/zip");
           
             context.StartActivity(Intent.CreateChooser(intentsend, "Compartir a?"));
@@ -184,7 +184,7 @@ namespace neonrommer
         {
             Intent intentsend = new Intent();
             intentsend.SetAction(Intent.ActionSend);
-            intentsend.PutExtra(Intent.ExtraText, "Link de descarga para el rom:" + lista[pos].nombre + "\n" + down[pos].Replace(" ", "%20") + "\n Compartido desde:NeonRom3r");
+            intentsend.PutExtra(Intent.ExtraText, "Link de descarga para el rom:" + lista[pos].Name + "\n" + down[pos].Replace(" ", "%20") + "\n Compartido desde:NeonRom3r");
             intentsend.SetType("text/plain");
             context.StartActivity(Intent.CreateChooser(intentsend, "Compartir a travez de?"));
 

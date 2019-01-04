@@ -10,12 +10,41 @@
         android:padding="5dp"
         android:background="@drawable/logo"
         android:visibility="invisible" />
-    <ImageView
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:id="@+id/portada2"
-        android:scaleType="fitXY"
-        android:background="@drawable/logolarge"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="5dp" />
+		
+	<ImageView
+		android:layout_width="300dp"
+		android:layout_height="200dp"
+		android:id="@+id/portada2"
+		android:scaleType="fitXY"
+		android:background="@drawable/logolarge"
+		android:layout_centerInParent="true"
+		android:layout_marginLeft="5dp"/>
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"	
+		android:textColor="#08a374"
+		android:id="@+id/estado"
+		android:layout_gravity="center"
+		android:layout_marginLeft="20dp"
+		android:text="Conectando al servidor..."
+		android:layout_marginRight="20dp"
+		android:layout_marginTop="20dp"
+		android:layout_marginBottom="20dp"
+		android:gravity="center"
+		android:layout_below="@+id/githubinfo" />
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"	
+		android:textColor="#08a374"
+		android:id="@+id/githubinfo"
+		android:layout_gravity="center"
+		android:layout_marginLeft="20dp"
+		android:text="Github:Gr3gorywolf/NeonRom3r"
+		android:layout_marginRight="20dp"
+		android:layout_marginTop="20dp"
+		android:layout_marginBottom="20dp"
+		android:gravity="center"
+		android:layout_below="@+id/portada2" />
 </RelativeLayout>
