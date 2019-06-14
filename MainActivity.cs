@@ -291,9 +291,10 @@ namespace neonrommer
             };
             //////////////////////////////////////////////////////////////////////////////filter
             ///
+        
             searchview.QueryTextSubmit += (aa, aaa)=>
             {
-
+                Console.WriteLine("klkprro");
                 if (estado == 0 || estado == 4)
                 {
                     adaptadorroms adaptadolllll = null;
@@ -301,6 +302,7 @@ namespace neonrommer
                     RunOnUiThread(() => listin.Adapter = adaptadolllll);
 
                 }
+               
             };
             searchview.QueryTextChange += (aa, aaa) =>
             {
@@ -313,6 +315,12 @@ namespace neonrommer
                         if (estado == 0 || estado == 4) {
                             if(romcounts[selectedconsole]<=500)
                                adaptadolllll = new adaptadorroms(this, listaelementos.Where(aaxx => aaxx.Name.ToLower().Contains(aaa.NewText.ToLower())).ToList(), idimagen);
+                            else
+                                if (aaa.NewText.Length <=1)
+                            {
+
+                                adaptadolllll = new adaptadorroms(this, listaelementos.Where(aaxx => aaxx.Name.ToLower().Contains("")).ToList(), idimagen);
+                            }
                         }
                         else
                         if (estado == 1)
@@ -349,7 +357,18 @@ namespace neonrommer
                         if (estado != 1 && romcounts[selectedconsole]<=500) { 
                        RunOnUiThread(() => listin.Adapter = adaptadolllll);
                         }
-                       
+
+                    }
+                    else
+                    {
+                        if (estado == 0 || estado == 4)
+                        {
+                            if (romcounts[selectedconsole] >= 500) { 
+                                adaptadorroms adaptadolllll = null;
+                            adaptadolllll = new adaptadorroms(this, listaelementos.Where(aaxx => aaxx.Name.ToLower().Contains("")).ToList(), idimagen);
+                            }
+
+                        }
                     }
                 }
                 catch {
@@ -457,12 +476,17 @@ namespace neonrommer
                     Region = ax.compactible
                 };
 
-                if (modelito.InfoLink.Contains("https://play.google.com/store/apps/details?id="))
-                {
+                /*    if (modelito.InfoLink.Contains("https://play.google.com/store/apps/details?id="))
+                    {*/
+                try {
                     if (miselaneousmethods.existepaquete(this, modelito.InfoLink.Split('=')[1]))
                         modelito.Region += " - instalado";
-                         
                 }
+                catch (Exception)
+                {
+
+                }
+              //  }
 
                     listaelementos.Add(modelito);
                 modelito = new Models.romsinfos();
@@ -626,6 +650,7 @@ namespace neonrommer
         }
         public void page(object sender, EventArgs e)
         {
+          
             var uri = Android.Net.Uri.Parse("https://gr3gorywolf.github.io/neonrom3r-webpage/");
             var intent = new Intent(Intent.ActionView, uri);
             StartActivity(intent);
@@ -856,7 +881,7 @@ namespace neonrommer
                
                     new Android.App.AlertDialog.Builder(this)
                     .SetTitle("Atención")
-                    .SetMessage("Existe una  versión mas reciente de la aplicación por favor pulse ok para ir a  la pagina de descarga\nNotas de version:")
+                    .SetMessage("Existe una  versión mas reciente de la aplicación por favor pulse ok para ir a  la pagina de descarga")
                     .SetCancelable(false).SetNegativeButton("Cancelar", cancell)
                     .SetPositiveButton("Ok", page)
                     .Create()
