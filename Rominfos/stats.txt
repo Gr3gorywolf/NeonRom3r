@@ -1,60 +1,51 @@
 Obteniendo datos de:GB
-490 Portadas encontradas de 621   131Portadas no encotradas
+516 Portadas encontradas de 621   105Portadas no encotradas
 50%
-490 Portadas encontradas de 620   130Portadas no encotradas
+515 Portadas encontradas de 620   105Portadas no encotradas
  100%
 Obteniendo datos de:GBA
-1916 Portadas encontradas de 2810   894Portadas no encotradas
+1648 Portadas encontradas de 2810   1162Portadas no encotradas
 50%
-1916 Portadas encontradas de 2809   893Portadas no encotradas
-Obteniendo datos de:GB
-502 Portadas encontradas de 621   119Portadas no encotradas
-50%
-502 Portadas encontradas de 620   118Portadas no encotradas
- 100%
-Obteniendo datos de:GBA
-1454 Portadas encontradas de 2810   1356Portadas no encotradas
-50%
-1454 Portadas encontradas de 2809   1355Portadas no encotradas
+1647 Portadas encontradas de 2809   1162Portadas no encotradas
  100%
 Obteniendo datos de:GBC
-425 Portadas encontradas de 529   104Portadas no encotradas
+444 Portadas encontradas de 529   85Portadas no encotradas
 50%
-425 Portadas encontradas de 528   103Portadas no encotradas
+443 Portadas encontradas de 528   85Portadas no encotradas
  100%
 Obteniendo datos de:NES
-702 Portadas encontradas de 1034   332Portadas no encotradas
+833 Portadas encontradas de 1034   201Portadas no encotradas
 50%
-702 Portadas encontradas de 1033   331Portadas no encotradas
+832 Portadas encontradas de 1033   201Portadas no encotradas
  100%
 Obteniendo datos de:SNES
-8234 Portadas encontradas de 11325   3091Portadas no encotradas
+8639 Portadas encontradas de 11326   2687Portadas no encotradas
 50%
-8234 Portadas encontradas de 11324   3090Portadas no encotradas
+8638 Portadas encontradas de 11325   2687Portadas no encotradas
  100%
 Obteniendo datos de:N64
-282 Portadas encontradas de 300   18Portadas no encotradas
+289 Portadas encontradas de 300   11Portadas no encotradas
 50%
-282 Portadas encontradas de 299   17Portadas no encotradas
+288 Portadas encontradas de 299   11Portadas no encotradas
  100%
 Obteniendo datos de:PSX
-492 Portadas encontradas de 1721   1229Portadas no encotradas
+557 Portadas encontradas de 1721   1164Portadas no encotradas
 50%
-492 Portadas encontradas de 1720   1228Portadas no encotradas
+556 Portadas encontradas de 1720   1164Portadas no encotradas
  100%
 Obteniendo datos de:NDS
-4012 Portadas encontradas de 6573   2561Portadas no encotradas
+4138 Portadas encontradas de 6573   2435Portadas no encotradas
 50%
-4012 Portadas encontradas de 6572   2560Portadas no encotradas
+4137 Portadas encontradas de 6572   2435Portadas no encotradas
  100%
 Obteniendo datos de:Genesis
-660 Portadas encontradas de 948   288Portadas no encotradas
+733 Portadas encontradas de 948   215Portadas no encotradas
 50%
-660 Portadas encontradas de 947   287Portadas no encotradas
+732 Portadas encontradas de 947   215Portadas no encotradas
  100%
 Obteniendo datos de:Dreamcast
-546 Portadas encontradas de 843   297Portadas no encotradas
+585 Portadas encontradas de 843   258Portadas no encotradas
 50%
-546 Portadas encontradas de 842   296Portadas no encotradas
+584 Portadas encontradas de 842   258Portadas no encotradas
  100%
 extraccion completa...
