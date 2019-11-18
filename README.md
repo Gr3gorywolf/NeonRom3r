@@ -1,4 +1,3 @@
-# NeonRom3r
 
 <p align="center"><img src='https://gr3gorywolf.github.io/NeonRom3r/logolarge.png' style='margin-left:25%'/></p>
 <br>This is a android app to download roms directly without enter to another webpage based on information scraped from <a href='https://the-eye.eu/public/rom/'>here</a> using  <a href='https://github.com/Gr3gorywolf/Neonrom3r-rom-infos-scraper'>Neonrom3r-rom-infos-scraper</a> and also you can download those roms directly from web using <a href="https://gr3gorywolf.github.io/neonrom3r-webpage/neonrom3rweb.html">Neonrom3r web</a>
