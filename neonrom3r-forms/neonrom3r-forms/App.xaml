@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="neonrom3r.forms.App">
+    <Application.Resources>
+        <!--Colores de la app-->
+        <Color x:Key="primary">#434e56</Color>
+        <Color x:Key="primary_dark">#323538</Color> 
+        <Color x:Key="accent">#08a374</Color>
+        <Color x:Key="primary_text">#FFFFFF</Color>
+        <Color x:Key="secondary_text">#FFFFFF</Color>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             
+             xmlns:flow="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+             x:Class="neonrom3r.forms.Controls.ConsoleListPage">
+    <StackLayout>
+        <flow:FlowListView    x:Name="lstConsole"   
+                              HorizontalOptions="FillAndExpand"
+                              HasUnevenRows="True"
+                              FlowColumnMinWidth="50"
+                              FlowColumnCount="2"
+                              VerticalOptions="CenterAndExpand"
+                              Margin="10,0,10,0" 
+                              BackgroundColor="Transparent">
+            <flow:FlowListView.FlowColumnTemplate>
+                <DataTemplate>
+                    <Frame CornerRadius="10" Margin="20" HorizontalOptions="FillAndExpand" BorderColor="white" BackgroundColor="Transparent"> 
+                        <StackLayout>
+                            <Image Source="{Binding Image}" HeightRequest="40" WidthRequest="40" HorizontalOptions="CenterAndExpand"/>
+                            <Label Text="{Binding Name}"  HorizontalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                    </Frame>
+                </DataTemplate>
+            </flow:FlowListView.FlowColumnTemplate>
+        </flow:FlowListView>
+    </StackLayout>
+</StackLayout>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:menu="clr-namespace:neonrom3r.forms.Views.MainMenu"
+             xmlns:pages="clr-namespace:neonrom3r.forms.Views"
+             x:Class="neonrom3r.forms.Views.MainMenu.MainMenuMaster"
+             Title="Master">
+  <StackLayout>
+        <ListView x:Name="PagesList" Footer="" HasUnevenRows="true" ItemsSource="{Binding MenuItems}" x:FieldModifier="public">
+            <ListView.Header>
+                <StackLayout  Padding="10">
+                    <Image Source="logolarge.png" WidthRequest="160"/>
+                </StackLayout>
+            </ListView.Header>
+            <ListView.ItemTemplate> 
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="5,10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding Icon}" />
+                            <Label Grid.Column="1" VerticalTextAlignment="Center" TextColor="White" Text="{Binding Title}" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

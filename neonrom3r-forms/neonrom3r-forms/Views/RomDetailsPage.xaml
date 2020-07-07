@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Detalles del rom"
+             x:Class="neonrom3r.forms.Views.RomDetailsPage">
+    <ContentPage.Content>
+        <StackLayout x:Name="stkContent">
+            <StackLayout IsVisible="{Binding !Isloading}">
+                <Image  HeightRequest="120" WidthRequest="120" Aspect="AspectFit" Source="{Binding Rom.Portrait}"/>
+
+            </StackLayout>
+
+            <StackLayout IsVisible="{Binding Isloading}" VerticalOptions="CenterAndExpand">
+                <ActivityIndicator IsRunning="True" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

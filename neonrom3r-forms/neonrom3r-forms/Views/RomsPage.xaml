@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:components ="clr-namespace:neonrom3r.forms.Controls"
+             mc:Ignorable="d"
+             Title="Roms"
+             x:Class="neonrom3r.forms.Views.RomsPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand">
+            <!--If there is no console selected-->
+            <components:ConsoleListPage x:Name="consConsoles"/>
+            
+            <!--If there is a console selected-->
+            <ListView x:Name="lstRoms" RowHeight="100">
+                <ListView.ItemTemplate >
+                    <DataTemplate>
+                        <ViewCell >
+                        <StackLayout Orientation="Horizontal" Padding="10" >
+                            <Image Source="{Binding Portrait}" Aspect="AspectFit"  HeightRequest="60" WidthRequest="60" Margin="0,0,5,0"/>
+                            <StackLayout VerticalOptions="CenterAndExpand">
+                                <Label FontSize="Medium" Text="{Binding Name}"/>
+                                <Label FontSize="Small" Text="{Binding Region}"/>
+                            </StackLayout>
+                        </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout> 
+    </ContentPage.Content>
+</ContentPage>
