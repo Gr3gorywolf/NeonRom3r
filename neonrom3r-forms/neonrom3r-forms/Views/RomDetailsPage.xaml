@@ -1,22 +1,63 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<popup:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             Title="Detalles del rom"
+             xmlns:popup="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             Title="{Binding Rom.Name}"
              x:Class="neonrom3r.forms.Views.RomDetailsPage">
-    <ContentPage.Content>
-        <StackLayout x:Name="stkContent">
-            <StackLayout IsVisible="{Binding !Isloading}">
-                <Image  HeightRequest="120" WidthRequest="120" Aspect="AspectFit" Source="{Binding Rom.Portrait}"/>
+    <StackLayout x:Name="stkContent" BackgroundColor="{StaticResource primary}" HeightRequest="230" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" >
+      
+        <StackLayout IsVisible="{Binding IsLoading, Converter={StaticResource BoolInverter}}" Padding="10,10,10,10" Orientation="Horizontal">
 
+            <Image HeightRequest="160" WidthRequest="160"  Aspect="AspectFit" Source="{Binding Rom.Portrait}"/>
+            <StackLayout VerticalOptions="CenterAndExpand">
+
+                <!--Name-->
+                <StackLayout Orientation="Horizontal" >
+                    <Image HeightRequest="30" WidthRequest="30" Source="gamepadvariant.png"/>
+                    <Label Text="{Binding Rom.Name}"  VerticalTextAlignment="Center"/>
+                </StackLayout>
+                <!--Console-->
+                <StackLayout Orientation="Horizontal" >
+                    <Image HeightRequest="30" WidthRequest="30" Source="gamepad.png"/>
+                    <Label Text="{Binding Rom.Console}" VerticalTextAlignment="Center"/>
+                </StackLayout>
+                <!--Size-->
+                <StackLayout Orientation="Horizontal" >
+                    <Image HeightRequest="30" WidthRequest="30" Source="chartdonut.png"/>
+                    <Label Text="{Binding Rom.Size}" VerticalTextAlignment="Center"/>
+                </StackLayout>
+                <!--Region-->
+                <StackLayout Orientation="Horizontal" >
+                    <Image HeightRequest="30" WidthRequest="30" Source="flagvariant.png"/>
+                    <Label Text="{Binding Rom.Region}" VerticalTextAlignment="Center"/>
+                </StackLayout> 
             </StackLayout>
-
-            <StackLayout IsVisible="{Binding Isloading}" VerticalOptions="CenterAndExpand">
-                <ActivityIndicator IsRunning="True" HorizontalOptions="CenterAndExpand"/>
-            </StackLayout>
-
         </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+        <!--Actions-->
+        <StackLayout IsVisible="{Binding IsLoading, Converter={StaticResource BoolInverter}}" Spacing="30" Padding="20,0,20,0" HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+            <ImageButton BackgroundColor="#d32f2f" 
+                         Source="close.png" 
+                         HeightRequest="35" 
+                         WidthRequest="35" 
+                         CornerRadius="20" 
+                         x:Name="btnClose"
+                         Padding="10"/>
+            <ImageButton BackgroundColor="{StaticResource accent}" 
+                         Source="download.png" 
+                         HeightRequest="35" 
+                         WidthRequest="35" 
+                         CornerRadius="20"
+                         Padding="10"/>
+            <ImageButton BackgroundColor="{StaticResource accent}" 
+                         Source="sharevariant.png" 
+                         HeightRequest="35" 
+                         WidthRequest="35" 
+                         CornerRadius="20" 
+                         Padding="10"/>
+        </StackLayout>
+        <ActivityIndicator IsRunning="{Binding IsLoading}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+    </StackLayout>
+</popup:PopupPage>

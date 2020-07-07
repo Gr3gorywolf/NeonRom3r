@@ -10,9 +10,15 @@ using Xamarin.Forms;
 
 namespace neonrom3r.forms.ViewModels
 {
-    class RomDetailsViewModel : INotifyPropertyChanged
+    public class RomDetailsViewModel : INotifyPropertyChanged
     {
+        public RomDetailsViewModel(RomItem item)
+        {
+            this.RomItem = item;
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
+
         protected void OnPropertyChanged(string prop)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
@@ -47,7 +53,7 @@ namespace neonrom3r.forms.ViewModels
         }
 
         private RomItem _romItem = null;
-        public RomItem RomItem { 
+        private RomItem RomItem { 
             get {
                 return _romItem;
             }
@@ -61,7 +67,7 @@ namespace neonrom3r.forms.ViewModels
         private Command _loadRomCommand = null;
         public Command LoadRomCommand => _loadRomCommand ?? (_loadRomCommand = new Command(async () =>
         {
-            await LoadRom();
+             LoadRom();
         }));
         private async Task LoadRom()
         {

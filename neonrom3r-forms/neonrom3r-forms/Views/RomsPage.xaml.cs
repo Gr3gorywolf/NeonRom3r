@@ -32,7 +32,10 @@ namespace neonrom3r.forms.Views
             lstRoms.ItemsSource = new RomsHelpers().GetRoms(console);
             lstRoms.ItemSelected += (send, obj) =>
             {
-                Navigation.PushAsync(new RomDetailsPage((RomItem)obj.SelectedItem));
+                if(obj.SelectedItem != null)
+                {
+                    Rg.Plugins.Popup.Services.PopupNavigation.Instance.PushAsync(new RomDetailsPage((RomItem)obj.SelectedItem),false);
+                }
                 lstRoms.SelectedItem = null;
             };
         }

@@ -4,8 +4,11 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             xmlns:converters="clr-namespace:neonrom3r.forms.Utils.Converters"
              x:Class="neonrom3r.forms.App">
     <Application.Resources>
+        <!--Converters -->
+        <converters:NegateBoolConverter x:Key="BoolInverter"  />
         <!--Colores de la app-->
         <Color x:Key="primary">#434e56</Color>
         <Color x:Key="primary_dark">#323538</Color> 

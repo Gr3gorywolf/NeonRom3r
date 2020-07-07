@@ -23,6 +23,7 @@ namespace neonrommer
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);
             UserDialogs.Init(this);
             Android.Glide.Forms.Init(this);
             LoadApplication(new neonrom3r.forms.App(Intent.GetStringExtra("ver")));

@@ -145,6 +145,9 @@
     <PackageReference Include="Newtonsoft.Json">
       <Version>12.0.3</Version>
     </PackageReference>
+    <PackageReference Include="Rg.Plugins.Popup">
+      <Version>2.0.0.3</Version>
+    </PackageReference>
     <PackageReference Include="RxJS-Main">
       <Version>4.0.7</Version>
     </PackageReference>
@@ -321,6 +324,9 @@
       <Project>{9c2e05cc-6d6b-462c-ac7b-9ef5a1d6eaa6}</Project>
       <Name>neonrom3r.forms</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\close.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
