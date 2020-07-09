@@ -47,6 +47,7 @@
                          Padding="10"/>
             <ImageButton BackgroundColor="{StaticResource accent}" 
                          Source="download.png" 
+                         Command="{Binding DownloadRom}"
                          HeightRequest="35" 
                          WidthRequest="35" 
                          CornerRadius="20"

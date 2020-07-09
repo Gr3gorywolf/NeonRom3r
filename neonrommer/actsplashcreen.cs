@@ -22,7 +22,7 @@ namespace neonrommer
         ImageView logo;
         TextView estado;
         string verstring = "";
-       
+
         bool envioklk = false;
         string directoriocache = Android.OS.Environment.ExternalStorageDirectory + "/.romercache";
         // bool terminada = false;
@@ -33,18 +33,18 @@ namespace neonrommer
             SetContentView(Resource.Layout.splashcreen);
 
             ServicePointManager.ServerCertificateValidationCallback += new System.Net.Security.RemoteCertificateValidationCallback(ValidateRemoteCertificate);
-          
+
 
             logo = FindViewById<ImageView>(Resource.Id.portada2);
             estado = FindViewById<TextView>(Resource.Id.estado);
-          var  gitinfo = FindViewById<TextView>(Resource.Id.githubinfo);
+            var gitinfo = FindViewById<TextView>(Resource.Id.githubinfo);
             miselaneousmethods.ponerfuente2(this.Assets, estado);
             miselaneousmethods.ponerfuente2(this.Assets, gitinfo);
             animar3(logo);
-          
+
             new Thread(() =>
             {
-                RunOnUiThread(() => estado.Text = "Conectandose al servidor...");
+                RunOnUiThread(() => estado.Text = "Connecting to server...");
                 if (CheckInternetConnection())
                 {
                     List<string> arraydatos = new List<string>
@@ -61,11 +61,11 @@ namespace neonrommer
                     }
                     else
                     {
-                     
+
                         Enviarreporte();
                     }
 
-                 
+
 
 
                 }
@@ -73,12 +73,9 @@ namespace neonrommer
                 {
                     RunOnUiThread(() =>
                     {
-                        if (File.Exists(miselaneousmethods.archivoregistro))
-                            new AlertDialog.Builder(this).SetTitle("No se pudo conectar a el servidor").SetMessage("Puede que no haya conexion a internet . Usted puede entrar a la app en el modo offline en el cual podrá usar solo ciertas funciones").SetCancelable(false).SetNegativeButton("Cerrar", ok).SetPositiveButton("Abrir en modo offline", off).Create().Show();
-                        else
-                            new AlertDialog.Builder(this).SetTitle("No se pudo conectar a el servidor").SetMessage("Puede que no haya conexion a internet. El modo offline se habilitará cuando usted tenga descargado almenos 1 rom").SetCancelable(true).SetPositiveButton("Ok", ok).Create().Show();
+                        new AlertDialog.Builder(this).SetTitle("Error connecting to server").SetMessage("Please verify your network connection and try again").SetCancelable(false).SetNegativeButton("Close", ok).SetPositiveButton("Open on offline mode", off).Create().Show();
                     });
-                    }
+                }
             }).Start();
 
             // Create your application here
@@ -90,14 +87,15 @@ namespace neonrommer
         }
         public void off(object sender, EventArgs e)
         {
-            
+
             Intent intento = new Intent(this, typeof(FormsActivity));
             intento.PutExtra("online", false);
             StartActivity(intento);
             this.Finish();
         }
-        public async void Enviarreporte() {
-            RunOnUiThread(() => estado.Text = "Verificando archivos...");
+        public async void Enviarreporte()
+        {
+            RunOnUiThread(() => estado.Text = "Verifying files...");
             if (!File.Exists(directoriocache + "/paths.json"))
             {
 
@@ -120,16 +118,20 @@ namespace neonrommer
 
 
             }
-            else {
-                var json = JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText( directoriocache + "/paths.json"));
+            else
+            {
+                var json = JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText(directoriocache + "/paths.json"));
                 bool tiene = true;
-                foreach (var con in miselaneousmethods.consolelist) {
-                    if (!json.ContainsKey(con)) {
+                foreach (var con in miselaneousmethods.consolelist)
+                {
+                    if (!json.ContainsKey(con))
+                    {
                         tiene = false;
                     }
 
                 }
-                if (!tiene) {
+                if (!tiene)
+                {
 
                     Dictionary<string, string> dic = new Dictionary<string, string>();
                     string downloadpath = Path.Combine(Android.OS.Environment.ExternalStorageDirectory.AbsolutePath, Android.OS.Environment.DirectoryDownloads);
@@ -151,13 +153,14 @@ namespace neonrommer
             }
 
 
-            if (!File.Exists(directoriocache + "/version.gr3d") && !envioklk) {
-                string teto = "Descargada@" + Android.OS.Build.Model+"@"+System.DateTime.Now;
+            if (!File.Exists(directoriocache + "/version.gr3d") && !envioklk)
+            {
+                string teto = "Descargada@" + Android.OS.Build.Model + "@" + System.DateTime.Now;
                 try
                 {
 
                     var firebase = new FirebaseClient("https://neonrom3r-suggestions.firebaseio.com");
-                 await  firebase.Child("Descargas/" + miselaneousmethods.getrandomserial()).PutAsync(JsonConvert.SerializeObject(teto));
+                    await firebase.Child("Descargas/" + miselaneousmethods.getrandomserial()).PutAsync(JsonConvert.SerializeObject(teto));
                 }
                 catch (Exception) { }
 
@@ -166,20 +169,22 @@ namespace neonrommer
 
 
             }
-            else {
+            else
+            {
                 envioklk = true;
-                }
+            }
 
-            if (!Directory.Exists(directoriocache)) {
+            if (!Directory.Exists(directoriocache))
+            {
                 Directory.CreateDirectory(directoriocache);
-                }
+            }
             var axdxx = File.CreateText(directoriocache + "/appver");
             axdxx.Write("21");
             axdxx.Close();
 
 
 
-            RunOnUiThread(() => estado.Text = "Buscando actualizaciones...");
+            RunOnUiThread(() => estado.Text = "Looking for updates...");
             verstring = new WebClient().DownloadString("https://raw.githubusercontent.com/Gr3gorywolf/NeonRom3r/master/Updates/version.gr3v");
 
 
@@ -200,7 +205,7 @@ namespace neonrommer
 
             }
 
-              
+
 
 
         }
@@ -220,14 +225,14 @@ namespace neonrommer
         public void animar3(View imagen)
         {
             imagen.SetLayerType(LayerType.Hardware, null);
-           animacion= Android.Animation.ObjectAnimator.OfFloat(imagen, "alpha", 0.2f, 1f);
+            animacion = Android.Animation.ObjectAnimator.OfFloat(imagen, "alpha", 0.2f, 1f);
             animacion.SetDuration(1000);
-            animacion.RepeatCount = int.MaxValue-30;
+            animacion.RepeatCount = int.MaxValue - 30;
             animacion.RepeatMode = Android.Animation.ValueAnimatorRepeatMode.Reverse;
             animacion.Start();
             animacion.AnimationEnd += delegate
             {
-               
+
             };
 
         }
@@ -239,7 +244,7 @@ namespace neonrommer
             {
                 HttpWebRequest iNetRequest = (HttpWebRequest)WebRequest.Create(CheckUrl);
 
-                iNetRequest.Timeout =35000;
+                iNetRequest.Timeout = 35000;
 
                 WebResponse iNetResponse = iNetRequest.GetResponse();
 
@@ -260,18 +265,18 @@ namespace neonrommer
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
         {
             bool acepted = true;
-            foreach(var permi in grantResults) {
+            foreach (var permi in grantResults)
+            {
                 if (permi == Permission.Denied)
                 {
                     acepted = false;
-                    new AlertDialog.Builder(this).SetTitle("Error").SetMessage("No se han aceptado los permisos esto podria causar problemas en la aplicacion por favor aceptelos").SetPositiveButton("Ok", ok).Create().Show();
+                    new AlertDialog.Builder(this).SetTitle("Error").SetMessage("Permissions have not been accepted this could cause problems in the application please accept them").SetPositiveButton("Ok", ok).Create().Show();
 
                 }
-              
-              
-                }
-            if (acepted) { 
-            Enviarreporte();
+            }
+            if (acepted)
+            {
+                Enviarreporte();
             }
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
@@ -279,7 +284,4 @@ namespace neonrommer
 
 
     }
-
-    
-
 }

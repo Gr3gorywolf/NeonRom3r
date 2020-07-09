@@ -8,7 +8,7 @@ namespace neonrom3r.forms.Utils
 {
     public class Constants
     {
-        public static string CachePath
+        public  static string CachePath
         {
             get
             {
@@ -16,28 +16,10 @@ namespace neonrom3r.forms.Utils
             }
         }
 
-        public static string CatchedPortraitsPath
-        {
-            get
-            {
-                return $"{CachePath}/portraits";
-            }
-        }
+        public readonly static string CatchedPortraitsPath = $"{CachePath}/portraits";
 
-        public static string DownloadsFile
-        {
-            get
-            {
-                return $"{CachePath}/downloads.json";
-            }
-        }
+        public readonly static string DownloadsFile = $"{CachePath}/downloads.json";
 
-        public static string VersionFile
-        {
-            get
-            {
-                return $"{CachePath}/version.gr3d";
-            }
-        }
+        public readonly static string VersionFile = $"{CachePath}/version.gr3d";
     }
 }

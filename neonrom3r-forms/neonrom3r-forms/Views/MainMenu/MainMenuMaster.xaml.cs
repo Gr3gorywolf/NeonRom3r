@@ -43,11 +43,11 @@ namespace neonrom3r.forms.Views.MainMenu
             {
                 var items = new ObservableCollection<MasterPageItem>(new[]
                 {
-                    new MasterPageItem(){Id = 0,Title = "Roms descargados",Icon = "download.png", TargetType = typeof(DownloadedRoms)},
-                    new MasterPageItem(){Id = 1,Title = "Emuladores",Icon = "arcade.png", TargetType = typeof(EmulatorsPage)},
+                    new MasterPageItem(){Id = 0,Title = "Downloaded roms",Icon = "download.png", TargetType = typeof(DownloadedRoms)},
+                    new MasterPageItem(){Id = 1,Title = "Emulators",Icon = "arcade.png", TargetType = typeof(EmulatorsPage)},
                     new MasterPageItem(){Id = 2,Title = "Roms",Icon = "gamepad.png", TargetType = typeof(RomsPage)},
-                    new MasterPageItem(){Id = 3,Title = "Deja un feedback",Icon = "messagealert.png", TargetType = typeof(FeedbackPage)},
-                    new MasterPageItem(){Id = 4,Title = "Configuraciones",Icon = "messagealert.png", TargetType = typeof(SettingsPage)},
+                    new MasterPageItem(){Id = 3,Title = "Leave a feedback",Icon = "messagealert.png", TargetType = typeof(FeedbackPage)},
+                    new MasterPageItem(){Id = 4,Title = "Settings",Icon = "messagealert.png", TargetType = typeof(SettingsPage)},
 
                 });
                 MenuItems = items;

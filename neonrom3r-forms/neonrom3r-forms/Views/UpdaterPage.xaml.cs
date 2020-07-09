@@ -36,7 +36,7 @@ namespace neonrom3r.forms.Views
             {
                 Device.BeginInvokeOnMainThread(async () =>
                 {
-                  var result = await  DisplayAlert("Error al descargar la actualizacion", "Por favor verifique que tenga una conexion a internet activa y vuelva a intentarlo", "Reintentar", "Cerrar aplicacion");
+                  var result = await  DisplayAlert("Download failed", "Please verify your network connection and try again", "Retry", "Close app");
                     if (result)
                     {
                         RunUpdate();

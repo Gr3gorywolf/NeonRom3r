@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             Title="Configuraciones"
+             Title="Settings"
              x:Class="neonrom3r.forms.Views.SettingsPage">
     <ContentPage.Content>
         <StackLayout>

@@ -17,19 +17,23 @@ namespace neonrom3r.forms.Views
         public RomsPage()
         {
             InitializeComponent();
+            stkRoms.IsVisible = false;
             consConsoles.onSelected += (ConsoleItem cons) =>
             {
                 Navigation.PushAsync(new RomsPage(cons));
             };
-            lstRoms.IsVisible = false;
-           
         }
         public RomsPage(ConsoleItem console)
         {
             InitializeComponent();
             consConsoles.IsVisible = false;
-            Title = $"Roms de {console.Name}";
-            lstRoms.ItemsSource = new RomsHelpers().GetRoms(console);
+            Title = $"{console.Name} Roms";
+            var romList = new RomsHelpers().GetRoms(console);
+            srcSearch.TextChanged += (obj, send) =>
+            {
+                lstRoms.ItemsSource = romList.Where(ax => ax.Name.ToLower().Contains(send.NewTextValue.ToLower())).ToList();
+            };
+            lstRoms.ItemsSource = romList;
             lstRoms.ItemSelected += (send, obj) =>
             {
                 if(obj.SelectedItem != null)

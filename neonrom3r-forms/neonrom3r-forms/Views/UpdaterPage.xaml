@@ -10,7 +10,7 @@
         <StackLayout>
             <StackLayout VerticalOptions="CenterAndExpand">
                 <Image Source="logolarge.png" HeightRequest="90" WidthRequest="170" HorizontalOptions="CenterAndExpand" Margin="10,0,10,0"/>
-                <Label Text="Descargando actualización..." HorizontalTextAlignment="Center" TextColor="{StaticResource accent}"/>
+                <Label Text="Downloading update..." HorizontalTextAlignment="Center" TextColor="{StaticResource accent}"/>
                 <ActivityIndicator IsRunning="True"/>
             </StackLayout>
         </StackLayout>

@@ -71,6 +71,7 @@
     <Compile Include="actsugerencias.cs" />
     <Compile Include="adaptadorromsdownloaded.cs" />
     <Compile Include="adaptadorroms.cs" />
+    <Compile Include="DependencyService\AlertsDependency.cs" />
     <Compile Include="DependencyService\FilesDependency.cs" />
     <Compile Include="folderselecter.cs" />
     <Compile Include="FormsActivity.cs" />

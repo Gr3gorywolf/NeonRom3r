@@ -31,7 +31,7 @@ namespace neonrom3r.forms.Views
         {
             new Thread(new ThreadStart(() =>
             {
-                ViewModel.LoadRomCommand.Execute(null);
+                ViewModel.LoadRom.Execute(null);
             })).Start() ;
             Utils.AnimationsHelper.SlideUpModal(stkContent);
             btnClose.Clicked += async delegate
